@@ -1,0 +1,440 @@
+{
+	"actors": [
+		"group1",
+		"group2",
+		"group3"
+	],
+	"workflow_id": "wf-1",
+	"children": [
+		{
+			"task_type": "form_inquiry",
+			"task_data": {
+				"form_structure": "task1",
+				"label": "Tache 1"
+			},
+			"actors": [
+				"group1"
+			],
+			"children": [
+				{
+					"task_type": "exclusive_gateway",
+					"task_data": {
+						"key": "",
+						"values": {}
+					},
+					"users_actors": "system",
+					"children": [
+						{
+							"task_type": "form_inquiry",
+							"task_data": {
+								"form_structure": "task1",
+								"label": "Tache 1"
+							},
+							"actors": [
+								"group1",
+								"group2"
+							],
+							"children": [
+								{
+									"task_type": "form_inquiry",
+									"task_data": {
+										"form_structure": "task1",
+										"label": "Tache 1"
+									},
+									"actors": [
+										"group2"
+									],
+									"children": [
+										{
+											"task_type": "end"
+										}
+									]
+								}
+							]
+						},
+						{
+							"task_type": "form_inquiry",
+							"task_data": {
+								"form_structure": "task1",
+								"label": "Tache 1"
+							},
+							"actors": [
+								"group3"
+							],
+							"children": [
+								{
+									"task_type": "exclusive_gateway",
+									"task_data": {
+										"key": "",
+										"values": {}
+									},
+									"users_actors": "system",
+									"children": [
+										{
+											"task_type": "form_inquiry",
+											"task_data": {
+												"form_structure": "task1",
+												"label": "Tache 1"
+											},
+											"actors": [
+												"group1"
+											],
+											"children": [
+												{
+													"task_type": "end"
+												}
+											]
+										},
+										{
+											"task_type": "end"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"workflow_label": "Workflow 1",
+	"web_json": {
+		"nodes": [
+			{
+				"measured": {
+					"width": 124,
+					"height": 57
+				},
+				"dragging": false,
+				"id": "START",
+				"position": {
+					"x": "-365.5036912840918",
+					"y": "-36.94622150164105"
+				},
+				"type": "start",
+				"selected": false,
+				"data": {
+					"label": "Début"
+				}
+			},
+			{
+				"measured": {
+					"width": 285,
+					"height": 95
+				},
+				"dragging": false,
+				"id": "node_1750009397886",
+				"position": {
+					"x": "192.52056309041782",
+					"y": "53.6186468146615"
+				},
+				"type": "task",
+				"selected": true,
+				"data": {
+					"task_type": "form_inquiry",
+					"params": {
+						"form_version": "1.0.2",
+						"form_id": "task1",
+						"form_label": "Tache 1"
+					},
+					"main_type": "task"
+				}
+			},
+			{
+				"measured": {
+					"width": 169,
+					"height": 95
+				},
+				"dragging": false,
+				"id": "node_1750009402778",
+				"position": {
+					"x": "-232.08198595348404",
+					"y": "-38.73427058758605"
+				},
+				"type": "task",
+				"selected": false,
+				"data": {
+					"task_type": "form_inquiry",
+					"params": {
+						"form_version": "1.0.2",
+						"form_id": "task1",
+						"form_label": "Tache 1"
+					},
+					"main_type": "task"
+				}
+			},
+			{
+				"measured": {
+					"width": 225,
+					"height": 95
+				},
+				"dragging": false,
+				"id": "node_1750009478161",
+				"position": {
+					"x": "482.01544892030324",
+					"y": "-61.95098609698269"
+				},
+				"type": "task",
+				"selected": false,
+				"data": {
+					"task_type": "form_inquiry",
+					"params": {
+						"form_version": "1.0.2",
+						"form_id": "task1",
+						"form_label": "Tache 1"
+					},
+					"main_type": "task"
+				}
+			},
+			{
+				"measured": {
+					"width": 261,
+					"height": 95
+				},
+				"dragging": false,
+				"id": "node_1750009479987",
+				"position": {
+					"x": "726.2109738999402",
+					"y": "5.332978025051119"
+				},
+				"type": "task",
+				"selected": false,
+				"data": {
+					"task_type": "form_inquiry",
+					"params": {
+						"form_version": "1.0.2",
+						"form_id": "task1",
+						"form_label": "Tache 1"
+					},
+					"main_type": "task"
+				}
+			},
+			{
+				"measured": {
+					"width": 269,
+					"height": 95
+				},
+				"dragging": false,
+				"id": "node_1750009486785",
+				"position": {
+					"x": "197.16871806326043",
+					"y": "-58.198242187109784"
+				},
+				"type": "task",
+				"selected": false,
+				"data": {
+					"task_type": "form_inquiry",
+					"params": {
+						"form_version": "1.0.2",
+						"form_id": "task1",
+						"form_label": "Tache 1"
+					},
+					"main_type": "task"
+				}
+			},
+			{
+				"measured": {
+					"width": 220,
+					"height": 77
+				},
+				"dragging": false,
+				"id": "node_1750009491416",
+				"position": {
+					"x": "-50.26889249179476",
+					"y": "-35.708259629963166"
+				},
+				"type": "exclusive_gateway",
+				"selected": false,
+				"data": {
+					"actors": [
+						"system"
+					],
+					"main_type": "exclusive_gateway"
+				}
+			},
+			{
+				"measured": {
+					"width": 220,
+					"height": 77
+				},
+				"dragging": false,
+				"id": "node_1750009536144",
+				"position": {
+					"x": 486,
+					"y": 49
+				},
+				"type": "exclusive_gateway",
+				"selected": false,
+				"data": {
+					"actors": [
+						"system"
+					],
+					"main_type": "exclusive_gateway"
+				}
+			},
+			{
+				"measured": {
+					"width": 92,
+					"height": 57
+				},
+				"dragging": false,
+				"id": "node_1750009538871",
+				"position": {
+					"x": "994.1498718261719",
+					"y": 4
+				},
+				"type": "end",
+				"selected": false,
+				"data": {
+					"actors": [
+						"system"
+					],
+					"main_type": "end"
+				}
+			},
+			{
+				"measured": {
+					"width": 92,
+					"height": 57
+				},
+				"dragging": false,
+				"id": "node_1750009539845",
+				"position": {
+					"x": 729,
+					"y": 116
+				},
+				"type": "end",
+				"selected": false,
+				"data": {
+					"actors": [
+						"system"
+					],
+					"main_type": "end"
+				}
+			},
+			{
+				"measured": {
+					"width": 92,
+					"height": 57
+				},
+				"dragging": false,
+				"id": "node_1750009541813",
+				"position": {
+					"x": 718,
+					"y": -63
+				},
+				"type": "end",
+				"selected": false,
+				"data": {
+					"actors": [
+						"system"
+					],
+					"main_type": "end"
+				}
+			}
+		],
+		"edges": [
+			{
+				"sourceHandle": "start-header-out-process-0",
+				"source": "START",
+				"id": "xy-edge__STARTstart-header-out-process-0-node_1750009402778task-header-in-process-0",
+				"targetHandle": "task-header-in-process-0",
+				"target": "node_1750009402778"
+			},
+			{
+				"sourceHandle": "task-header-out-process-0",
+				"source": "node_1750009402778",
+				"id": "xy-edge__node_1750009402778task-header-out-process-0-node_1750009491416system-EG-header-in-process-0",
+				"targetHandle": "system-EG-header-in-process-0",
+				"target": "node_1750009491416"
+			},
+			{
+				"sourceHandle": "system-EG-body-out-process-0",
+				"source": "node_1750009491416",
+				"id": "xy-edge__node_1750009491416system-EG-body-out-process-0-node_1750009486785task-header-in-process-0",
+				"targetHandle": "task-header-in-process-0",
+				"target": "node_1750009486785"
+			},
+			{
+				"sourceHandle": "system-EG-body-out-process-1",
+				"source": "node_1750009491416",
+				"id": "xy-edge__node_1750009491416system-EG-body-out-process-1-node_1750009397886task-header-in-process-0",
+				"targetHandle": "task-header-in-process-0",
+				"target": "node_1750009397886"
+			},
+			{
+				"sourceHandle": "task-header-out-process-0",
+				"source": "node_1750009397886",
+				"id": "xy-edge__node_1750009397886task-header-out-process-0-node_1750009536144system-EG-header-in-process-0",
+				"targetHandle": "system-EG-header-in-process-0",
+				"target": "node_1750009536144"
+			},
+			{
+				"sourceHandle": "task-header-out-process-0",
+				"source": "node_1750009486785",
+				"id": "xy-edge__node_1750009486785task-header-out-process-0-node_1750009478161task-header-in-process-0",
+				"targetHandle": "task-header-in-process-0",
+				"target": "node_1750009478161"
+			},
+			{
+				"sourceHandle": "system-EG-body-out-process-0",
+				"source": "node_1750009536144",
+				"id": "xy-edge__node_1750009536144system-EG-body-out-process-0-node_1750009479987task-header-in-process-0",
+				"targetHandle": "task-header-in-process-0",
+				"target": "node_1750009479987"
+			},
+			{
+				"sourceHandle": "task-header-out-process-0",
+				"source": "node_1750009479987",
+				"id": "xy-edge__node_1750009479987task-header-out-process-0-node_1750009538871end-header-in-process-0",
+				"targetHandle": "end-header-in-process-0",
+				"target": "node_1750009538871"
+			},
+			{
+				"sourceHandle": "system-EG-body-out-process-1",
+				"source": "node_1750009536144",
+				"id": "xy-edge__node_1750009536144system-EG-body-out-process-1-node_1750009539845end-header-in-process-0",
+				"targetHandle": "end-header-in-process-0",
+				"target": "node_1750009539845"
+			},
+			{
+				"sourceHandle": "task-header-out-process-0",
+				"source": "node_1750009478161",
+				"id": "xy-edge__node_1750009478161task-header-out-process-0-node_1750009541813end-header-in-process-0",
+				"targetHandle": "end-header-in-process-0",
+				"target": "node_1750009541813"
+			}
+		],
+		"viewport": {
+			"x": 10.14094749731754,
+			"y": 148.2498720494886,
+			"zoom": 0.5743491774985175
+		},
+		"actors": {
+			"global": [
+				"group1",
+				"group2",
+				"group3"
+			],
+			"node_1750009402778": [
+				"group1"
+			],
+			"node_1750009486785": [
+				"group1",
+				"group2"
+			],
+			"node_1750009478161": [
+				"group2"
+			],
+			"node_1750009479987": [
+				"group1"
+			],
+			"node_1750009397886": [
+				"group3"
+			]
+		}
+	},
+	"from_web": true,
+	"isNewEditor": true,
+	"last_updated": 0
+}
