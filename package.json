@@ -1,6 +1,7 @@
 {
   "name": "fbi",
   "version": "1.0.0",
+  "type": "module",
   "description": "fichier d'initialisation de firebase (création des collections)",
   "main": "index.js",
   "scripts": {
