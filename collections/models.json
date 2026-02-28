@@ -1,0 +1,470 @@
+[
+  {
+    "id": "oncologist",
+    "created_at": {
+      "_seconds": 1771533803,
+      "_nanoseconds": 91000000
+    },
+    "label": "Oncologue",
+    "fields": [
+      {
+        "unique_id": "68de3473-8335-4fcc-8ccb-c359423c2136",
+        "label": "Date du diagnostic",
+        "type": "string",
+        "key": "diagnosis_date"
+      },
+      {
+        "unique_id": "c11d5803-6533-439b-abb0-444fecdf7295",
+        "label": "Site de la tumeur primitive",
+        "type": "string",
+        "key": "primary_tumor_site"
+      },
+      {
+        "unique_id": "ef12ae3a-8a9f-48a3-97d0-c772adaf5938",
+        "label": "Stade clinique (TNM)",
+        "type": "string",
+        "key": "clinical_stage"
+      },
+      {
+        "unique_id": "3a900cca-6549-40bb-bce5-77267df21af0",
+        "label": "Score OMS / ECOG",
+        "type": "integer",
+        "key": "ecog_performance_status"
+      },
+      {
+        "unique_id": "7083fc3d-34b4-4ae5-a9dc-a162b5cf8919",
+        "label": "Traitements systémiques antérieurs",
+        "type": "string",
+        "key": "previous_systemic_treatments"
+      },
+      {
+        "unique_id": "384f2820-b7b4-4e0d-a8b0-571163b45673",
+        "label": "Proposition de traitement",
+        "type": "string",
+        "key": "proposed_treatment_plan"
+      }
+    ],
+    "last_updated": {
+      "_seconds": 1771535104,
+      "_nanoseconds": 553000000
+    }
+  },
+  {
+    "id": "surgeon",
+    "created_at": {
+      "_seconds": 1771535458,
+      "_nanoseconds": 860000000
+    },
+    "label": "Chirurgien",
+    "last_updated": {
+      "_seconds": 1771535610,
+      "_nanoseconds": 452000000
+    },
+    "fields": [
+      {
+        "unique_id": "74cc42db-f37a-46db-8502-7563346c6c1e",
+        "label": "Patient opérable",
+        "type": "string",
+        "key": "is_operable"
+      },
+      {
+        "unique_id": "e372765a-7366-4860-a41a-ec3e141add0a",
+        "label": "Type de chirurgie envisagée",
+        "type": "string",
+        "key": "proposed_surgery_type"
+      },
+      {
+        "unique_id": "3c29635d-8796-4bbb-96f5-e0b4a5280020",
+        "label": "Date estimée de l'intervention",
+        "type": "string",
+        "key": "estimated_surgery_date"
+      },
+      {
+        "unique_id": "ea46a31b-b7e9-4157-b4f8-bbf1316a5e7d",
+        "label": "Évaluation des risques chirurgicaux",
+        "type": "string",
+        "key": "surgical_risks_assessment"
+      },
+      {
+        "unique_id": "b8620715-1527-495b-bfbb-a9d9097871a5",
+        "label": "Consultation d'anesthésie requise",
+        "type": "string",
+        "key": "anesthesia_consultation_needed"
+      }
+    ]
+  },
+  {
+    "id": "general_practitioner",
+    "last_updated": {
+      "_seconds": 1771536163,
+      "_nanoseconds": 316000000
+    },
+    "created_at": {
+      "_seconds": 1771536163,
+      "_nanoseconds": 316000000
+    },
+    "label": "Médecin généraliste",
+    "fields": [
+      {
+        "unique_id": "e8085351-eb17-4a80-986b-def2bb64482d",
+        "label": "Comorbidités",
+        "type": "string",
+        "key": "comorbidities"
+      },
+      {
+        "unique_id": "ffb8203c-2d6d-4428-98fa-e1baa9d10865",
+        "label": "Traitements en cours",
+        "type": "string",
+        "key": "current_medications"
+      },
+      {
+        "unique_id": "11f062bb-2244-429c-8de1-af7024b1c9a0",
+        "label": "Antécédents familiaux",
+        "type": "string",
+        "key": "family_medical_history"
+      },
+      {
+        "unique_id": "593a6b2e-c9fb-4e4f-9099-4c9fb9fb222b",
+        "label": "Directives anticipées",
+        "type": "string",
+        "key": "patient_wishes"
+      }
+    ]
+  },
+  {
+    "id": "radiologist",
+    "last_updated": {
+      "_seconds": 1771535766,
+      "_nanoseconds": 562000000
+    },
+    "created_at": {
+      "_seconds": 1771535766,
+      "_nanoseconds": 562000000
+    },
+    "label": "Radiologue",
+    "fields": [
+      {
+        "unique_id": "ae83535e-7176-49e6-8a6e-a240faa603b7",
+        "label": "Date de l'examen",
+        "type": "string",
+        "key": "imaging_date"
+      },
+      {
+        "unique_id": "c7493b62-6141-4fee-b572-0399bf584216",
+        "label": "Modalité d'imagerie",
+        "type": "string",
+        "key": "imaging_modality"
+      },
+      {
+        "unique_id": "7004de80-a42e-48a9-b513-5c5f530aede2",
+        "label": "Compte-rendu radiologique",
+        "type": "string",
+        "key": "radiological_findings"
+      },
+      {
+        "unique_id": "d8f3f03b-9f36-4d66-875d-68e5fec1e82d",
+        "label": "Taille de la lésion (mm)",
+        "type": "string",
+        "key": "tumor_size_mm"
+      },
+      {
+        "unique_id": "640a5295-ebfd-474f-9afa-b56ddfb1a123",
+        "label": "Imagerie médicale",
+        "type": "string",
+        "key": "medical_imaging_files"
+      }
+    ]
+  },
+  {
+    "id": "nurse",
+    "last_updated": {
+      "_seconds": 1771536092,
+      "_nanoseconds": 825000000
+    },
+    "created_at": {
+      "_seconds": 1771536092,
+      "_nanoseconds": 825000000
+    },
+    "label": "Infirmier(ère)",
+    "fields": [
+      {
+        "unique_id": "c328e387-4255-4484-90e1-ef636bb712c9",
+        "label": "Poids (kg)",
+        "type": "integer",
+        "key": "patient_weight_kg"
+      },
+      {
+        "unique_id": "0d473b3e-47b9-4312-b191-52b6e08102e6",
+        "label": "Taille (cm)",
+        "type": "integer",
+        "key": "patient_height_cm"
+      },
+      {
+        "unique_id": "62047686-ec3f-4985-b609-b2f86574a15d",
+        "label": "Évaluation de la douleur",
+        "type": "integer",
+        "key": "pain_score"
+      },
+      {
+        "unique_id": "94ae57dd-dee0-4100-829d-318efebaae65",
+        "label": "État nutritionnel",
+        "type": "string",
+        "key": "nutritional_status"
+      },
+      {
+        "unique_id": "71e1dcc3-470c-4e83-8db2-7369f0ff01a1",
+        "label": "Besoins d'accompagnement social",
+        "type": "string",
+        "key": "social_support_needs"
+      }
+    ]
+  },
+  {
+    "id": "fiche",
+    "created_at": {
+      "_seconds": 1771426999,
+      "_nanoseconds": 521000000
+    },
+    "last_updated": {
+      "_seconds": 1771429302,
+      "_nanoseconds": 357000000
+    },
+    "label": "fiche presentation ",
+    "fields": [
+      {
+        "unique_id": "77f8b1f6-a282-4a38-875c-a36071bbad08",
+        "label": "Nom",
+        "type": "string",
+        "key": "name"
+      },
+      {
+        "unique_id": "eb9b8c3d-1735-48f9-ae12-48e347226454",
+        "label": "Prenom",
+        "type": "string",
+        "key": "last_name"
+      }
+    ]
+  },
+  {
+    "id": "Present",
+    "last_updated": {
+      "_seconds": 1771515245,
+      "_nanoseconds": 509000000
+    },
+    "created_at": {
+      "_seconds": 1771515245,
+      "_nanoseconds": 509000000
+    },
+    "label": "Présentation joao",
+    "fields": [
+      {
+        "unique_id": "de1ac179-1374-4dff-afdf-7d263bc80f25",
+        "label": "Prénom",
+        "type": "string",
+        "key": "name"
+      },
+      {
+        "unique_id": "eb14765c-613f-4c6f-85e2-4a18a9c5bf6b",
+        "label": "Nom de Famille",
+        "type": "string",
+        "key": "LastName"
+      },
+      {
+        "unique_id": "a196c6fb-003c-44a9-b334-086c71d4c25e",
+        "label": "Age",
+        "type": "integer",
+        "key": "Age"
+      }
+    ]
+  },
+  {
+    "id": "radiotherapist",
+    "created_at": {
+      "_seconds": 1771535923,
+      "_nanoseconds": 933000000
+    },
+    "label": "Radiothérapeute",
+    "last_updated": {
+      "_seconds": 1771536000,
+      "_nanoseconds": 660000000
+    },
+    "fields": [
+      {
+        "unique_id": "237fbaa7-4541-4838-800d-bf2a94a7a92f",
+        "label": "Intention de traitement",
+        "type": "string",
+        "key": "treatment_intent"
+      },
+      {
+        "unique_id": "adf874e0-766d-4998-a504-e37b1509cfbf",
+        "label": "Volume cible",
+        "type": "string",
+        "key": "target_volume"
+      },
+      {
+        "unique_id": "e0af4f26-aa5e-4b79-9e17-6430d5dd9103",
+        "label": "Dose totale prévue (Gy)",
+        "type": "string",
+        "key": "total_dose_gy"
+      },
+      {
+        "unique_id": "37f0bdc6-ed57-42ab-8611-84801331dad6",
+        "label": "Nombre de fractions",
+        "type": "string",
+        "key": "number_of_fractions"
+      },
+      {
+        "unique_id": "548e7cb3-734a-4908-a61c-f78f7088e54b",
+        "label": "Plan de dosimétrie",
+        "type": "string",
+        "key": "dosimetry_plan"
+      }
+    ]
+  },
+  {
+    "id": "",
+    "created_at": {
+      "_seconds": 1770821633,
+      "_nanoseconds": 287000000
+    },
+    "label": "",
+    "last_updated": {
+      "_seconds": 1771583756,
+      "_nanoseconds": 583000000
+    },
+    "fields": [
+      {
+        "unique_id": "334568b8-9d50-44e9-b81d-184ce0ff9188",
+        "class_id": "nurse",
+        "class_label": "Infirmier(ère)",
+        "label": "",
+        "type": "class",
+        "key": ""
+      }
+    ]
+  },
+  {
+    "id": "test",
+    "created_at": {
+      "_seconds": 1770821662,
+      "_nanoseconds": 90000000
+    },
+    "label": "test",
+    "fields": [
+      {
+        "unique_id": "eddb8575-870a-4fef-abeb-33b475fba952",
+        "label": "nom",
+        "type": "string",
+        "key": "name"
+      },
+      {
+        "unique_id": "193b30d4-f387-423b-9640-3920e6fb99bc",
+        "label": "prenom",
+        "type": "string",
+        "key": "last_name"
+      }
+    ],
+    "last_updated": {
+      "_seconds": 1771321668,
+      "_nanoseconds": 551000000
+    }
+  },
+  {
+    "id": "pathologist",
+    "last_updated": {
+      "_seconds": 1771535882,
+      "_nanoseconds": 478000000
+    },
+    "created_at": {
+      "_seconds": 1771535882,
+      "_nanoseconds": 478000000
+    },
+    "label": "Anatomopathologiste",
+    "fields": [
+      {
+        "unique_id": "cf0f67ad-a29b-4ba2-a35d-573ebabe8ae2",
+        "label": "Date du prélèvement",
+        "type": "string",
+        "key": "biopsy_date"
+      },
+      {
+        "unique_id": "34eecaad-c5fa-45e9-9d62-4e659461e7be",
+        "label": "Type de prélèvement",
+        "type": "string",
+        "key": "sample_type"
+      },
+      {
+        "unique_id": "3eed80c7-06da-48e3-b16f-c87e9408f822",
+        "label": "Type histologique",
+        "type": "string",
+        "key": "histological_type"
+      },
+      {
+        "unique_id": "fdef152f-1cd4-4860-ac41-3cf2aaff4435",
+        "label": "Grade tumoral",
+        "type": "string",
+        "key": "tumor_grade"
+      },
+      {
+        "unique_id": "9bc3c530-a6e5-459f-be6c-f735b771ed1a",
+        "label": "Statut des biomarqueurs",
+        "type": "string",
+        "key": "biomarkers_status"
+      },
+      {
+        "unique_id": "4f4c2fb0-46a7-459b-b249-9488c7bf8251",
+        "label": "Lames numérisées",
+        "type": "string",
+        "key": "pathology_slides"
+      }
+    ]
+  },
+  {
+    "id": "patient_id",
+    "last_updated": {
+      "_seconds": 1771594636,
+      "_nanoseconds": 326000000
+    },
+    "created_at": {
+      "_seconds": 1771594636,
+      "_nanoseconds": 326000000
+    },
+    "label": "patient",
+    "fields": [
+      {
+        "unique_id": "3cf637ce-a79f-4728-8525-f81b460ac8e1",
+        "class_id": "radiotherapist",
+        "class_label": "Radiothérapeute",
+        "label": "name",
+        "type": "class",
+        "key": "name_id"
+      }
+    ]
+  },
+  {
+    "id": "bonjour",
+    "last_updated": {
+      "_seconds": 1770735870,
+      "_nanoseconds": 86000000
+    },
+    "created_at": {
+      "_seconds": 1770735870,
+      "_nanoseconds": 86000000
+    },
+    "label": "bonjour",
+    "fields": [
+      {
+        "unique_id": "ab4b0ba7-e590-473d-a114-1040ad549fdb",
+        "label": "nom",
+        "type": "string",
+        "key": "prenom"
+      },
+      {
+        "unique_id": "0a0d66e0-ffa8-476b-885b-3fa8abad28e8",
+        "label": "prenom",
+        "type": "string",
+        "key": "lastname"
+      }
+    ]
+  }
+]

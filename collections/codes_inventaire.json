@@ -1,3 +1,237 @@
-{
-	"info": "No example yet"
-}
+[
+  {
+    "id": "EXAMPLE",
+    "info": "No example yet"
+  },
+  {
+    "id": "OxdprVp0ntIxW7RbvnGm",
+    "sessions": [],
+    "code": "worflowTest",
+    "description": "",
+    "type": "daily",
+    "domainId": "DEV",
+    "date_début": {
+      "_seconds": 1771286400,
+      "_nanoseconds": 0
+    },
+    "permanent": true,
+    "date_fin": {
+      "_seconds": 1772236800,
+      "_nanoseconds": 0
+    },
+    "email": "gedmaldo@gmail.com",
+    "forms": [],
+    "last_updated": {
+      "_seconds": 1771583336,
+      "_nanoseconds": 379000000
+    },
+    "workflows": [
+      "Workflowtest2"
+    ],
+    "membres": [
+      "maxence.campourcy@gmail.com",
+      "exemple.ok@gmail.com",
+      "gmail@gmail.com",
+      "naiymultimedia@gmail.com",
+      "gedmaldo@gmail.com"
+    ],
+    "groupes": {
+      "form1": [
+        "gedmaldo@gmail.com"
+      ],
+      "form3": [
+        "exemple.ok@gmail.com"
+      ],
+      "form2": [
+        "maxence.campourcy@gmail.com"
+      ],
+      "Medecin": [
+        "exemple.ok@gmail.com"
+      ],
+      "Infirmier": [
+        "exemple.ok@gmail.com"
+      ],
+      "Patient": [
+        "maxence.campourcy@gmail.com",
+        "naiymultimedia@gmail.com"
+      ],
+      "Infirmiere": [
+        "gmail@gmail.com",
+        "gke,ef,ze@gail.com"
+      ]
+    }
+  },
+  {
+    "id": "TYilpeGrCajNBTlVR0Dv",
+    "last_updated": {
+      "_seconds": 1771433171,
+      "_nanoseconds": 770000000
+    },
+    "sessions": [],
+    "code": "Acteurs",
+    "description": "Juste un worflow TEST ",
+    "workflows": [
+      "acteur"
+    ],
+    "type": "daily",
+    "domainId": "DEV",
+    "date_début": {
+      "_seconds": 1771372800,
+      "_nanoseconds": 0
+    },
+    "groupes": {
+      "group3": [
+        "pierre@olga.fr"
+      ],
+      "group2": [
+        "exemple.ok@gmail.com"
+      ],
+      "group1": [
+        "form1@gmail.com"
+      ]
+    },
+    "permanent": true,
+    "date_fin": {
+      "_seconds": 1771372800,
+      "_nanoseconds": 0
+    },
+    "membres": [
+      "gedmaldo@gmail.com",
+      "pierre@olga.fr",
+      "exemple.ok@gmail.com",
+      "form1@gmail.com"
+    ],
+    "email": "gedmaldo@gmail.com",
+    "forms": []
+  },
+  {
+    "id": "gWx6HNKoLB9dJ54sxjoV",
+    "sessions": [],
+    "code": "Inventaire_test_Naiyma",
+    "type": "daily",
+    "domainId": "DEV",
+    "date_début": {
+      "_seconds": 1771545600,
+      "_nanoseconds": 0
+    },
+    "permanent": true,
+    "email": "naiymultimedia@gmail.com",
+    "forms": [],
+    "groupes": {
+      "Infirmier": [
+        "gedmaldo@gmail.com",
+        "gmail@gmail.com"
+      ],
+      "Patient": [
+        "naiymultimedia@gmail.com"
+      ]
+    },
+    "last_updated": {
+      "_seconds": 1771594975,
+      "_nanoseconds": 862000000
+    },
+    "description": "",
+    "date_fin": {
+      "_seconds": 1771545600,
+      "_nanoseconds": 0
+    },
+    "workflows": [
+      "Workflowtest2"
+    ],
+    "membres": [
+      "gedmaldo@gmail.com",
+      "undefined",
+      "naiymultimedia@gmail.com",
+      "gmail@gmail.com"
+    ]
+  },
+  {
+    "id": "hrLTh2h5Q7LTLHr8tSQ2",
+    "sessions": [],
+    "description": "",
+    "workflows": [
+      "RDVGeneraliste"
+    ],
+    "type": "daily",
+    "domainId": "DEV",
+    "date_début": {
+      "_seconds": 1770681600,
+      "_nanoseconds": 0
+    },
+    "permanent": true,
+    "date_fin": {
+      "_seconds": 1770681600,
+      "_nanoseconds": 0
+    },
+    "email": "gedmaldo@gmail.com",
+    "forms": [],
+    "last_updated": {
+      "_seconds": 1770725228,
+      "_nanoseconds": 918000000
+    },
+    "membres": [
+      "exemple.ok@gmail.com",
+      "gmail@gmail.com",
+      "undefined",
+      "gedmaldo@gmail.com"
+    ],
+    "groupes": {
+      "Infirmiere": [
+        "infermier@gmail.com"
+      ],
+      "Medecin": [
+        "medecin@gmail.com"
+      ],
+      "Patient": [
+        "patient@gmail.com"
+      ]
+    },
+    "code": "Hopital"
+  },
+  {
+    "id": "iUQZXEMF3REJSD3adG0c",
+    "last_updated": {
+      "_seconds": 1770900602,
+      "_nanoseconds": 879000000
+    },
+    "sessions": [],
+    "code": "RdvRadiologie",
+    "description": "Organisation sur laquelle si des patients veulent prendre leur rendez vous aurons la possibilité",
+    "workflows": [
+      "RDVRadiologue"
+    ],
+    "type": "daily",
+    "domainId": "DEV",
+    "date_début": {
+      "_seconds": 1770768000,
+      "_nanoseconds": 0
+    },
+    "groupes": {
+      "Medecin": [
+        "exemple.ok@gmail.com"
+      ],
+      "Patient": [
+        "gmail@gmail.com"
+      ],
+      "Infirmiere": [
+        "maxence.campourcy@gmail.com"
+      ],
+      "Radiologue": [
+        "gedmaldo@gmail.com"
+      ]
+    },
+    "permanent": true,
+    "date_fin": {
+      "_seconds": 1772236800,
+      "_nanoseconds": 0
+    },
+    "membres": [
+      "gedmaldo@gmail.com",
+      "gmail@gmail.com",
+      "maxence.campourcy@gmail.com",
+      "exemple.ok@gmail.com"
+    ],
+    "email": "gedmaldo@gmail.com",
+    "forms": []
+  }
+]

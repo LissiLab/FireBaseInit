@@ -1,3 +1,1595 @@
-{
-	"info": "No example yet"
-}
+[
+  {
+    "id": "1bV9NJsQNEtERuv7j0TF",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire Radiothérapeute",
+    "models": [
+      "radiotherapist"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "Curatif ou palliatif",
+        "field_required": true,
+        "unique_id": "dbd5c448-6e43-4676-8c3e-004727d8551a",
+        "field_key": "treatment_intent",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Intention de traitement",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "18b8d19a-bbbc-41e0-859e-67c1da3a3b91",
+        "field_key": "target_volume",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Volume cible",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "9c8bc2db-d1f4-457a-93e0-5bd69a7c2f14",
+        "field_key": "total_dose_gy",
+        "field_mode": "edit",
+        "field_label": "Dose totale prévue (Gy)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "a0cecfd2-4e88-4fa3-ae81-5b9e15030288",
+        "field_key": "number_of_fractions",
+        "field_mode": "edit",
+        "field_label": "Nombre de fractions",
+        "field_type": "input:number"
+      },
+      {
+        "unique_id": "b5084b6e-70f7-488f-9914-0dc35742189b",
+        "field_key": "dosimetry_plan",
+        "orthanc_url": "",
+        "field_mode": "edit",
+        "field_type": "dicom"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "radiotherapistForm"
+  },
+  {
+    "id": "1xyYzLo7C3H7ig29PpLK",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire Infirmier(ère)",
+    "models": [
+      "nurse"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "a3b27523-645d-45f3-a9bc-51f2921d9527",
+        "field_key": "patient_weight_kg",
+        "field_mode": "edit",
+        "field_label": "Poids (kg)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "df96e82f-e9d5-4987-bb7d-2404ea7b6cbb",
+        "field_key": "patient_height_cm",
+        "field_mode": "edit",
+        "field_label": "Taille (cm)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "Échelle de 0 à 10",
+        "field_required": false,
+        "unique_id": "fa968664-16fc-4dba-b846-881c8500ae60",
+        "field_key": "pain_score",
+        "field_mode": "edit",
+        "field_label": "Évaluation de la douleur",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "Préciser si dénutrition ou perte de poids récente",
+        "field_required": true,
+        "unique_id": "cda9891e-902b-451f-9457-1e68515d8bde",
+        "field_key": "nutritional_status",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "État nutritionnel",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "bf54c045-bcd1-499f-8ad9-2906ed1afff3",
+        "field_key": "social_support_needs",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Besoins d'accompagnement social",
+        "field_type": "input:text"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "nurseForm"
+  },
+  {
+    "id": "2h974Gt4fERT4uEXTySX",
+    "form_version": "1.0.0",
+    "form_label": "form3RDVG",
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form3_RDVG",
+    "models": [
+      "Patient",
+      "Infirmier",
+      "Medecin"
+    ],
+    "form": [
+      {
+        "field_hint": "Dupont",
+        "field_required": false,
+        "unique_id": "2c795f03-b016-4c12-b811-447e34c7a903",
+        "field_key": "lastname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Nom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Lucas",
+        "field_required": false,
+        "unique_id": "1a1a2c01-6985-417d-acce-6fa9d26fef1c",
+        "field_key": "firstname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Prenom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [
+            {
+              "label": "Fièvre"
+            },
+            {
+              "label": "Douleurs"
+            },
+            {
+              "label": "Fatigue"
+            },
+            {
+              "label": "Suivi médical"
+            },
+            {
+              "label": "Autre"
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "a9ac9783-73c0-4aaf-acad-e84ed5ff0a31",
+        "field_key": "motifsvisite1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Motifs de la visite",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "258032ac-d88f-4862-b08c-d563f9a3e9ef",
+        "field_key": "TextArea1",
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "ex: 170",
+        "field_required": false,
+        "unique_id": "8072a8d8-4d27-4266-b6b4-20d79dbb7a27",
+        "field_key": "Taille1",
+        "field_mode": "edit",
+        "field_label": "Taille (cm)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 60",
+        "field_required": false,
+        "unique_id": "8cb7f8b3-8492-426c-be43-2a10a3efca53",
+        "field_key": "Poids1",
+        "field_mode": "edit",
+        "field_label": "Poids (kg)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 36.5",
+        "field_required": false,
+        "unique_id": "a957317b-722d-4738-ab59-0a04e2cb1b83",
+        "field_key": "Temperature1",
+        "field_mode": "edit",
+        "field_label": "Température (°C)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 12/8",
+        "field_required": false,
+        "unique_id": "b0ddb5ad-0cf8-48f6-878e-95fadbc3d149",
+        "field_key": "TensionArterielle1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Tension artérielle",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "d7e562fa-d144-41cc-b665-85e15e089803",
+        "field_key": "ObservationsInfirmier1",
+        "field_mode": "edit",
+        "field_label": "Observations infirmier",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "01a55b65-1461-4b5e-b942-9001ae6e446f",
+        "field_key": "Diagnostic1",
+        "field_mode": "edit",
+        "field_label": "Diagnostic",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "ea496147-0acd-4acb-8d54-36b855e1c09d",
+        "field_key": "Prescription1",
+        "field_mode": "edit",
+        "field_label": "Prescription",
+        "field_type": "textarea"
+      },
+      {
+        "unique_id": "9e9182fa-e346-44ba-b902-f3e15ec689f1",
+        "field_key": "Consultation_Valide1",
+        "field_mode": "edit",
+        "field_label": "Consultation validée",
+        "field_type": "checkbox"
+      }
+    ]
+  },
+  {
+    "id": "E2nA6QsFDmrFCPbUBat3",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire Médecin généraliste",
+    "models": [
+      "general_practitioner"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "Diabète, HTA, insuffisance rénale, etc.",
+        "field_required": true,
+        "unique_id": "5d90481d-64f1-49ae-81a8-46becc48e430",
+        "field_key": "comorbidities",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Comorbidités",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "1c1851e1-b3d5-4c92-9261-6baf752bf199",
+        "field_key": "current_medications",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Traitements en cours",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "4080e180-daa1-4fe9-a4dc-a559c4379563",
+        "field_key": "family_medical_history",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Antécédents familiaux",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Souhaits du patient concernant sa prise en charge",
+        "field_required": false,
+        "unique_id": "4d9579c3-586b-4a84-b6e6-1ee03db72f08",
+        "field_key": "patient_wishes",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Directives anticipées",
+        "field_type": "input:text"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "general_practitionerForm"
+  },
+  {
+    "id": "EXAMPLE",
+    "info": "No example yet"
+  },
+  {
+    "id": "Kpu0gShYJFIXT49AkQtD",
+    "form_version": "1.0.0",
+    "form_label": "Form4RDVR",
+    "models": [
+      "Medecin",
+      "Patient"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "67c87179-55df-4917-82c0-865ee9311850",
+        "field_key": "Prescription1",
+        "field_mode": "edit",
+        "field_label": "Prescription",
+        "field_type": "textarea"
+      },
+      {
+        "unique_id": "34dce2dd-8fab-48de-9e6d-32990a8adc2d",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Confirmation de lecture",
+        "field_type": "checkbox"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "Form4RDVR"
+  },
+  {
+    "id": "OtGsm0qzG2CaBdRQMkXH",
+    "form_version": "1.0.0",
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form1_RDVG",
+    "form_label": "Form1RDVG",
+    "models": [
+      "Patient"
+    ],
+    "form": [
+      {
+        "field_hint": "Dupont",
+        "field_required": false,
+        "unique_id": "6f6d838b-c168-46b5-bc24-9d34277fa0dc",
+        "field_key": "lastname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Nom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Lucas",
+        "field_required": false,
+        "unique_id": "ee1e7911-1a5b-4cf8-83b7-fd18a3d74b86",
+        "field_key": "firstname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Prenom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [
+            {
+              "label": "Fièvre"
+            },
+            {
+              "label": "Douleurs"
+            },
+            {
+              "label": "Fatigue"
+            },
+            {
+              "label": "Suivi médical"
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "85a4d30e-03fb-4808-a4fb-a01fdf06b072",
+        "field_key": "motifsvisite1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Motifs de la visite",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "75e97f1f-60e9-4598-9d04-1b408566f0df",
+        "field_key": "TextArea1",
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "textarea"
+      }
+    ]
+  },
+  {
+    "id": "P4sDbvQcg12964SfNx05",
+    "form_version": "1.0.0",
+    "form_label": "Form1RDVR",
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form1RDVR",
+    "models": [
+      "Patient"
+    ],
+    "form": [
+      {
+        "field_hint": "Dupont",
+        "field_required": false,
+        "unique_id": "94910d6d-36f6-4fc7-9165-9235df34a303",
+        "field_key": "lastname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Nom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Lucas",
+        "field_required": false,
+        "unique_id": "0adbadfe-db39-4d7b-a11f-2934e049e690",
+        "field_key": "firstname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Prenom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [
+            {
+              "label": "Douleur persistante"
+            },
+            {
+              "label": "Suspicion fracture"
+            },
+            {
+              "label": "Problème pulmonaire"
+            },
+            {
+              "label": "Autre"
+            },
+            {
+              "label": ""
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "dededb3b-44f7-4101-bbd3-318a1704103e",
+        "field_key": "motifsvisite2",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Motifs de la visite",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "a6183dc0-3a7c-4b18-a997-c669f45988af",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Text Area",
+        "field_type": "textarea"
+      }
+    ]
+  },
+  {
+    "id": "P7C3sWwnFhwCXYg5ODjW",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire_Patient1",
+    "models": [],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": true,
+        "field_options": {
+          "options": [
+            {
+              "label": "Injection"
+            },
+            {
+              "label": "Prise de sang"
+            },
+            {
+              "label": "Administration de médicaments"
+            },
+            {
+              "label": "Gestion des pansements"
+            },
+            {
+              "label": "Suivi d'une maladie chronique"
+            },
+            {
+              "label": "Vaccination"
+            },
+            {
+              "label": "Soins post-opératoires"
+            },
+            {
+              "label": "Perfusion"
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "6083b90b-3861-4578-af6a-f287ad0639f9",
+        "field_key": "",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Type_soins",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "51e6c2ca-a9ed-4182-9548-2f44798ce761",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Observations",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "e566a4c7-e711-4d9b-9b64-a83a1898e410",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Niveau_douleur",
+        "field_type": "input:number"
+      },
+      {
+        "unique_id": "86a04401-c243-4015-9883-0c6f2ee30225",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Necessite_avis_medical",
+        "field_type": "checkbox"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "Form_Patient1"
+  },
+  {
+    "id": "S5PWGNL9rLfDpRK9Up7Y",
+    "form_version": "1.0.0",
+    "form_label": "Form3RDVR",
+    "models": [
+      "Patient",
+      "Infirmier",
+      "Radiologue"
+    ],
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form3RDVR",
+    "form": [
+      {
+        "field_hint": "Dupont",
+        "field_required": false,
+        "unique_id": "3adf5b83-fc0d-4155-8168-8f02e747d42d",
+        "field_key": "lastname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Nom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Lucas",
+        "field_required": false,
+        "unique_id": "26861d1a-1e5c-4f42-bd98-d40b24324e68",
+        "field_key": "firstname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Prenom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [
+            {
+              "label": "Douleur persistante"
+            },
+            {
+              "label": "Suspicion fracture"
+            },
+            {
+              "label": "Problème pulmonaire"
+            },
+            {
+              "label": "Autre"
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "595dfb71-d3e7-4011-855e-f233153a2ff5",
+        "field_key": "motifsvisite2",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Motif de la visite",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "d1bee0bc-12a1-4adb-ad25-121696c6c32d",
+        "field_key": "TextArea2",
+        "field_mode": "edit",
+        "field_label": "Text Area",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "ex: 170",
+        "field_required": false,
+        "unique_id": "1e0e7fa1-aa05-4bc8-9f7d-1c667e6f7eca",
+        "field_key": "Taille1",
+        "field_mode": "edit",
+        "field_label": "Taille (cm)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 60",
+        "field_required": false,
+        "unique_id": "b7a9788c-c0b7-4f68-af91-4424107223c9",
+        "field_key": "Poids2",
+        "field_mode": "edit",
+        "field_label": "Poids (kg)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 36.5",
+        "field_required": false,
+        "unique_id": "cffbb0f4-84a0-48ee-9ecd-4d831524e00d",
+        "field_key": "Temperature2",
+        "field_mode": "edit",
+        "field_label": "Température (°C)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 12/8",
+        "field_required": false,
+        "unique_id": "d792a0a9-9f56-46c9-ab91-cbc323eac165",
+        "field_key": "TensionArterielle2",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Tension artérielle",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "132784de-61d1-477a-aba5-8fab72f1ab62",
+        "field_key": " ObservationsInfirmier2",
+        "field_mode": "edit",
+        "field_label": "Observations infirmier",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "366dc8bf-d77d-4de9-a2a7-d377c20e6b08",
+        "field_key": "ObservationRadiologique1",
+        "field_mode": "edit",
+        "field_label": "Observation radiologique",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "a58186d3-ab03-4f8a-bcd8-0fb0e0cc7a7d",
+        "field_key": "CompteRendu Radiologique1",
+        "field_mode": "edit",
+        "field_label": "Compte-rendu radiologique",
+        "field_type": "textarea"
+      },
+      {
+        "unique_id": "9d5f519d-8c87-4e38-8d91-03465f71ce64",
+        "field_key": "DICOM_Radiologie1",
+        "orthanc_url": "",
+        "field_mode": "edit",
+        "field_type": "dicom"
+      }
+    ]
+  },
+  {
+    "id": "Ths4rruiSunocFql8aKw",
+    "form_version": "1.0.0",
+    "form_label": "Form2RDVR",
+    "models": [
+      "Patient",
+      "Infirmier"
+    ],
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form2RDVR",
+    "form": [
+      {
+        "field_hint": "Dupont",
+        "field_required": false,
+        "unique_id": "dc6dfd46-796b-4ad6-a18d-c4a30e7c8b2f",
+        "field_key": "lastname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Nom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Lucas",
+        "field_required": false,
+        "unique_id": "1dfae610-071e-45e4-82fd-6898ecb4e194",
+        "field_key": "firstname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Prenom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [
+            {
+              "label": "Douleur persistante"
+            },
+            {
+              "label": "Suspicion fracture"
+            },
+            {
+              "label": "Problème pulmonaire"
+            },
+            {
+              "label": "Autre"
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "84da55ad-58c5-40c1-b0eb-f5ab71983667",
+        "field_key": "motifsvisite2",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Motifs de la visite",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "f5a4eccf-7e0d-483c-a439-ab2f853e66ef",
+        "field_key": "TextArea2",
+        "field_mode": "edit",
+        "field_label": "Text Area",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "ex : 170",
+        "field_required": false,
+        "unique_id": "7b188911-5a30-42d6-a85b-99bbae67ee74",
+        "field_key": "Taille1",
+        "field_mode": "edit",
+        "field_label": "Taille (cm)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 60",
+        "field_required": false,
+        "unique_id": "7b76caab-1872-4352-a5e0-f5fa3f950b9e",
+        "field_key": "Poids2",
+        "field_mode": "edit",
+        "field_label": "Poids (kg)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 36.5",
+        "field_required": false,
+        "unique_id": "10536b5a-cb0b-44a1-b1ef-7ca7198075f3",
+        "field_key": "Temperature2",
+        "field_mode": "edit",
+        "field_label": "Température (°C)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 12/8",
+        "field_required": false,
+        "unique_id": "cef71e78-044e-4530-8433-4134c72934b8",
+        "field_key": "TensionArterielle2",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Tension artérielle",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "cbcbef6a-4b72-4556-8632-2acc52d645b3",
+        "field_key": " ObservationsInfirmier2",
+        "field_mode": "edit",
+        "field_label": "Observations infirmier",
+        "field_type": "textarea"
+      }
+    ]
+  },
+  {
+    "id": "Ww12gzhLYewhKuoSM55s",
+    "form_version": "1.0.0",
+    "form_label": "Form5RDVR",
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form5RDVR",
+    "models": [
+      "Radiologue",
+      "Medecin"
+    ],
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "e126e872-d9af-49d4-bc68-8315aef70acf",
+        "field_key": "CompteRendu Radiologique1",
+        "field_mode": "edit",
+        "field_label": "Compte rendu du radiologue",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [
+            {
+              "label": "Traitement simple"
+            },
+            {
+              "label": "Examens complémentaires"
+            },
+            {
+              "label": "Orientation spécialiste"
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "0aeb9099-6cbd-4f3e-b9b0-c76ee56d3e5d",
+        "field_key": "Decision_finale1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Décision finale",
+        "field_type": "select"
+      },
+      {
+        "unique_id": "d39f7b41-0384-416d-b54f-09410b87aa4e",
+        "field_key": "Validation_Finale1",
+        "field_mode": "edit",
+        "field_label": "Validation finale",
+        "field_type": "checkbox"
+      }
+    ]
+  },
+  {
+    "id": "aIvZj45Owflce4kg3Iau",
+    "form_version": "1.0.0",
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form2_RDVG",
+    "form_label": "Form2RDVG",
+    "models": [
+      "Patient",
+      "Infirmier"
+    ],
+    "form": [
+      {
+        "field_hint": "Dupont",
+        "field_required": false,
+        "unique_id": "7603531b-7955-486c-ac75-e31f700afdf5",
+        "field_key": "lastname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Nom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Lucas",
+        "field_required": false,
+        "unique_id": "b5e3c5aa-fb22-4d87-8e89-a49f02244330",
+        "field_key": "firstname1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Prenom",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [
+            {
+              "label": "Fièvre"
+            },
+            {
+              "label": "Douleurs"
+            },
+            {
+              "label": "Fatigue"
+            },
+            {
+              "label": "Suivi médical"
+            }
+          ],
+          "source": "Text Option"
+        },
+        "unique_id": "7bf8b877-28e1-4c9d-acc5-68ca753f22a7",
+        "field_key": "motifsvisite1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Motifs de la visite",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "35bea4ea-39c1-4439-a797-e08abaca1f4a",
+        "field_key": "TextArea1",
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "ex: 170",
+        "field_required": false,
+        "unique_id": "db66dc83-7ea0-4cd1-b789-2ac6cbd0edcb",
+        "field_key": "Taille1",
+        "field_mode": "edit",
+        "field_label": "Taille (cm)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 60",
+        "field_required": false,
+        "unique_id": "f8eae566-4f8e-4e59-b905-64fbca6ab280",
+        "field_key": "Poids1",
+        "field_mode": "edit",
+        "field_label": "Poids (kg)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 36.5",
+        "field_required": false,
+        "unique_id": "1353be4f-2bda-47cb-990b-52039dcdcbfe",
+        "field_key": "Temperature1",
+        "field_mode": "edit",
+        "field_label": "Température (°C)",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "ex: 12/8",
+        "field_required": false,
+        "unique_id": "f1330858-4ef3-4834-acf2-7dd4912f8e8f",
+        "field_key": "TensionArterielle1",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Tension artérielle",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "c7ecbe82-bb8a-4d80-84ce-c228a5372bec",
+        "field_key": "ObservationsInfirmier1",
+        "field_mode": "edit",
+        "field_label": "Observations infirmier",
+        "field_type": "textarea"
+      }
+    ]
+  },
+  {
+    "id": "cit4n04kxVNvFMrPjXPn",
+    "form_version": "1.0.0",
+    "models": [
+      "surgeon"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "unique_id": "8e462f4d-ebd8-48a6-8e5e-16ad62ed700b",
+        "field_key": "is_operable",
+        "field_mode": "edit",
+        "field_label": "Patient opérable",
+        "field_type": "checkbox"
+      },
+      {
+        "field_hint": "À préciser uniquement si le patient est opérable",
+        "field_required": false,
+        "unique_id": "9ad3fe94-dc1a-4742-bd23-271f527d26f2",
+        "field_key": "proposed_surgery_type",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Type de chirurgie envisagée",
+        "field_type": "input:text"
+      },
+      {
+        "field_required": false,
+        "unique_id": "7065395b-9f2f-48b4-85ef-d2aa5e729c94",
+        "field_key": "estimated_surgery_date",
+        "field_mode": "edit",
+        "field_label": "Date estimée de l'intervention",
+        "field_type": "datepicker"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "adaf4136-a615-4b2b-8fa4-821996821f27",
+        "field_key": "surgical_risks_assessment",
+        "field_mode": "edit",
+        "field_label": "Évaluation des risques chirurgicaux",
+        "field_type": "textarea"
+      },
+      {
+        "unique_id": "16ee9514-6828-47c2-9df4-df3ed52c374c",
+        "field_key": "anesthesia_consultation_needed",
+        "field_mode": "edit",
+        "field_label": "Consultation d'anesthésie requise",
+        "field_type": "checkbox"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "surgeonForm",
+    "form_label": "Formulaire Chirurgien"
+  },
+  {
+    "id": "fWae8v0sWk1DssqYgV7g",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire_Patient2",
+    "models": [],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "unique_id": "fa1c5840-666c-4acc-9d52-9933376e047e",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Diagnostique_confirme",
+        "field_type": "checkbox"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "c1caa75f-f304-4056-87be-d1f5fed069fb",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Ajustement_protocol",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "5f6ef26f-97c1-4355-a655-e36d40eaff28",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Prescription_complementaire",
+        "field_type": "textarea"
+      },
+      {
+        "unique_id": "496809e6-a4e2-4dbe-842b-5a046b8f58a0",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "Validation_médecin",
+        "field_type": "checkbox"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "Form_Patient2"
+  },
+  {
+    "id": "h4W8Sue2fSDIrmH40Wwr",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire Oncologue",
+    "models": [
+      "oncologist"
+    ],
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "oncologistForm",
+    "form": [
+      {
+        "field_required": false,
+        "unique_id": "2da58611-94ef-4601-ac59-fa5706b86719",
+        "field_key": "diagnosis_date",
+        "field_mode": "edit",
+        "field_label": "Date du diagnostic",
+        "field_type": "datepicker"
+      },
+      {
+        "field_hint": "Préciser la localisation anatomique exacte",
+        "field_required": true,
+        "unique_id": "b4f28822-2a88-4ef0-b617-19eb196733dd",
+        "field_key": "primary_tumor_site",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Site de la tumeur primitive",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "ad242779-05a7-4339-9a73-a2c92d0f655e",
+        "field_key": "clinical_stage",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Stade clinique (TNM)",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "De 0 (pleinement actif) à 4 (alité)",
+        "field_required": false,
+        "unique_id": "f60e400d-e89b-4032-a770-0903641bba15",
+        "field_key": "clinical_stage",
+        "field_mode": "edit",
+        "field_label": "Score OMS / ECOG",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "a061b54a-5cc2-4353-a602-d5996dcb2d8c",
+        "field_key": "previous_systemic_treatments",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Traitements systémiques antérieurs",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "5237e172-772e-4304-a949-86303d407a8a",
+        "field_key": "proposed_treatment_plan",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Proposition de traitement",
+        "field_type": "input:text"
+      }
+    ]
+  },
+  {
+    "id": "jgIy6exX9E9gYe1h8UM2",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire Anatomopathologiste",
+    "models": [
+      "pathologist"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_required": false,
+        "unique_id": "f22750a4-01c1-4143-9d4a-a719d335b860",
+        "field_key": "biopsy_date",
+        "field_mode": "edit",
+        "field_label": "Date du prélèvement",
+        "field_type": "datepicker"
+      },
+      {
+        "field_hint": "Ex: Biopsie, pièce opératoire, cytologie",
+        "field_required": false,
+        "unique_id": "7cd21e18-b853-40d8-bc4e-2edd04d02c0a",
+        "field_key": "sample_type",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Type de prélèvement",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "dfa40def-12c3-4ab0-b110-03ff7d3e8112",
+        "field_key": "histological_type",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Type histologique",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "8a5011c0-2a15-48a0-9739-122a14b9a2e0",
+        "field_key": "tumor_grade",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Grade tumoral",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "Ex: HER2, KRAS, BRAF",
+        "field_required": false,
+        "unique_id": "0fda8248-1932-4ccf-9ca9-61c2aaf512b1",
+        "field_key": "biomarkers_status",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Statut des biomarqueurs",
+        "field_type": "input:text"
+      },
+      {
+        "unique_id": "783c8a02-5cf3-4926-bab7-564e812c1e73",
+        "field_key": "pathology_slides",
+        "orthanc_url": "",
+        "field_mode": "edit",
+        "field_type": "dicom"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "pathologistForm"
+  },
+  {
+    "id": "mjavUqe68ikwb1gL2ESE",
+    "form_version": "1.0.0",
+    "form_label": "FormMed",
+    "models": [],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "875ad2d2-37cc-4d4c-a346-8efae43eec00",
+        "field_key": "",
+        "field_events": {
+          "onChange": [
+            {
+              "target_key": "",
+              "action": "Set Value",
+              "source": {
+                "text": "",
+                "value": "Custom Text"
+              }
+            },
+            {
+              "target_key": "",
+              "action": "Set Value",
+              "source": {
+                "text": "",
+                "value": "Custom Text"
+              }
+            }
+          ]
+        },
+        "field_mode": "edit",
+        "field_label": "first_name",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "6592eb0a-94a1-4e35-a997-c722e31ed99f",
+        "field_key": "",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "last_name",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "65748b0b-41f2-4fff-89ba-f84db1721905",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "num_patient",
+        "field_type": "input:number"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "fa7fb8c2-011e-44b6-8cff-ab81286d8ac6",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "email_patient",
+        "field_type": "email"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "form_med"
+  },
+  {
+    "id": "qm4FYDBQFEzyHpUJQctw",
+    "form_version": "1.0.0",
+    "form_label": "Form4RDVG",
+    "last_updated": "2024-12-30",
+    "form_category": "protocol",
+    "form_id": "Form4_RDVG",
+    "models": [
+      "Medecin",
+      "Patient"
+    ],
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "d9b2737b-97b3-4abf-8fbe-41a3a8e93de5",
+        "field_key": "Prescription1",
+        "field_mode": "edit",
+        "field_label": "Prescription du médecin",
+        "field_type": "textarea"
+      },
+      {
+        "unique_id": "f384bc28-243a-4f77-ab97-62a228b247d4",
+        "field_key": "Confirmation_lecture1",
+        "field_mode": "edit",
+        "field_label": "Confirmation de lecture",
+        "field_type": "checkbox"
+      }
+    ]
+  },
+  {
+    "id": "qx6V9mqEmocB1IM5jMMv",
+    "form_version": "1.0.0",
+    "form_label": "Formulaire Radiologue",
+    "models": [
+      "radiologist"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_required": false,
+        "unique_id": "80427899-ccaf-47ae-8117-7e0e5e9991d8",
+        "field_key": "imaging_date",
+        "field_mode": "edit",
+        "field_label": "Date de l'examen",
+        "field_type": "datepicker"
+      },
+      {
+        "field_hint": "Ex: IRM, Scanner, TEP",
+        "field_required": true,
+        "unique_id": "f7ca5a80-3d10-461f-8c27-1b4a55cf7071",
+        "field_key": "imaging_modality",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Modalité d'imagerie",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": true,
+        "unique_id": "ae19a029-f91d-488e-9fb4-dd5d0de80ac8",
+        "field_key": "radiological_findings",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "Compte-rendu radiologique",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "cc66277d-fd7d-4c2f-b140-e4351dfadc8e",
+        "field_key": "tumor_size_mm",
+        "field_mode": "edit",
+        "field_label": "Taille de la lésion (mm)",
+        "field_type": "input:number"
+      },
+      {
+        "unique_id": "0198087e-72dc-4341-a4bd-3e0649a58e30",
+        "field_key": "medical_imaging_files",
+        "orthanc_url": "",
+        "field_mode": "edit",
+        "field_type": "dicom"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "radiologistForm"
+  },
+  {
+    "id": "tNFH3VWf81z2CpkSQdGn",
+    "form_version": "1.0.0",
+    "form_label": "Fiche Personel",
+    "models": [
+      "fiche"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "80d57319-46cf-4313-8507-fd177bcc2f8f",
+        "field_key": "name",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "65872e6f-7ef5-4f6e-b0cc-ade4184f6e4f",
+        "field_key": "first_name",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "input:text"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "perso_fiche"
+  },
+  {
+    "id": "xB2ISEpEAouWznLldaEH",
+    "form_version": "1.0.0",
+    "form_label": "test_form_n",
+    "models": [
+      "surgeon"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": false,
+        "field_options": {
+          "options": [],
+          "source": "Text Option"
+        },
+        "unique_id": "961e4091-1b6d-4459-ba52-73e4f380d52c",
+        "field_key": "",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "select"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "bfd0d72c-3122-4e90-9603-c7f63dda69b5",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "textarea"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "eb4606d8-8bb7-4eb3-a204-7052b504f51b",
+        "field_key": "",
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "email"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": ""
+  },
+  {
+    "id": "xi0GKvx1tzwSSxONZoVI",
+    "form_version": "1.0.0",
+    "form_label": "metier fiche",
+    "models": [
+      "fiche"
+    ],
+    "last_updated": "2024-12-30",
+    "form": [
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "dae3cfa4-1556-4b24-883a-e3bdfd60e248",
+        "field_key": "name",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "input:text"
+      },
+      {
+        "field_hint": "",
+        "field_required": false,
+        "unique_id": "e2a67227-b64b-490a-a7c7-d873ffc636a0",
+        "field_key": "last_name",
+        "field_events": {
+          "onChange": []
+        },
+        "field_mode": "edit",
+        "field_label": "",
+        "field_type": "input:text"
+      }
+    ],
+    "form_category": "protocol",
+    "form_id": "fiche_metier"
+  }
+]

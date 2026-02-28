@@ -1,8 +1,0 @@
-{
-	"session_id": "string",
-	"data": {},
-	"progress": [
-		"number"
-	],
-	"isWorkedOnBy": "string"
-}

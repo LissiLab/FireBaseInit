@@ -1,440 +1,2427 @@
-{
-	"actors": [
-		"group1",
-		"group2",
-		"group3"
-	],
-	"workflow_id": "wf-1",
-	"children": [
-		{
-			"task_type": "form_inquiry",
-			"task_data": {
-				"form_structure": "task1",
-				"label": "Tache 1"
-			},
-			"actors": [
-				"group1"
-			],
-			"children": [
-				{
-					"task_type": "exclusive_gateway",
-					"task_data": {
-						"key": "",
-						"values": {}
-					},
-					"users_actors": "system",
-					"children": [
-						{
-							"task_type": "form_inquiry",
-							"task_data": {
-								"form_structure": "task1",
-								"label": "Tache 1"
-							},
-							"actors": [
-								"group1",
-								"group2"
-							],
-							"children": [
-								{
-									"task_type": "form_inquiry",
-									"task_data": {
-										"form_structure": "task1",
-										"label": "Tache 1"
-									},
-									"actors": [
-										"group2"
-									],
-									"children": [
-										{
-											"task_type": "end"
-										}
-									]
-								}
-							]
-						},
-						{
-							"task_type": "form_inquiry",
-							"task_data": {
-								"form_structure": "task1",
-								"label": "Tache 1"
-							},
-							"actors": [
-								"group3"
-							],
-							"children": [
-								{
-									"task_type": "exclusive_gateway",
-									"task_data": {
-										"key": "",
-										"values": {}
-									},
-									"users_actors": "system",
-									"children": [
-										{
-											"task_type": "form_inquiry",
-											"task_data": {
-												"form_structure": "task1",
-												"label": "Tache 1"
-											},
-											"actors": [
-												"group1"
-											],
-											"children": [
-												{
-													"task_type": "end"
-												}
-											]
-										},
-										{
-											"task_type": "end"
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	],
-	"workflow_label": "Workflow 1",
-	"web_json": {
-		"nodes": [
-			{
-				"measured": {
-					"width": 124,
-					"height": 57
-				},
-				"dragging": false,
-				"id": "START",
-				"position": {
-					"x": "-365.5036912840918",
-					"y": "-36.94622150164105"
-				},
-				"type": "start",
-				"selected": false,
-				"data": {
-					"label": "Début"
-				}
-			},
-			{
-				"measured": {
-					"width": 285,
-					"height": 95
-				},
-				"dragging": false,
-				"id": "node_1750009397886",
-				"position": {
-					"x": "192.52056309041782",
-					"y": "53.6186468146615"
-				},
-				"type": "task",
-				"selected": true,
-				"data": {
-					"task_type": "form_inquiry",
-					"params": {
-						"form_version": "1.0.2",
-						"form_id": "task1",
-						"form_label": "Tache 1"
-					},
-					"main_type": "task"
-				}
-			},
-			{
-				"measured": {
-					"width": 169,
-					"height": 95
-				},
-				"dragging": false,
-				"id": "node_1750009402778",
-				"position": {
-					"x": "-232.08198595348404",
-					"y": "-38.73427058758605"
-				},
-				"type": "task",
-				"selected": false,
-				"data": {
-					"task_type": "form_inquiry",
-					"params": {
-						"form_version": "1.0.2",
-						"form_id": "task1",
-						"form_label": "Tache 1"
-					},
-					"main_type": "task"
-				}
-			},
-			{
-				"measured": {
-					"width": 225,
-					"height": 95
-				},
-				"dragging": false,
-				"id": "node_1750009478161",
-				"position": {
-					"x": "482.01544892030324",
-					"y": "-61.95098609698269"
-				},
-				"type": "task",
-				"selected": false,
-				"data": {
-					"task_type": "form_inquiry",
-					"params": {
-						"form_version": "1.0.2",
-						"form_id": "task1",
-						"form_label": "Tache 1"
-					},
-					"main_type": "task"
-				}
-			},
-			{
-				"measured": {
-					"width": 261,
-					"height": 95
-				},
-				"dragging": false,
-				"id": "node_1750009479987",
-				"position": {
-					"x": "726.2109738999402",
-					"y": "5.332978025051119"
-				},
-				"type": "task",
-				"selected": false,
-				"data": {
-					"task_type": "form_inquiry",
-					"params": {
-						"form_version": "1.0.2",
-						"form_id": "task1",
-						"form_label": "Tache 1"
-					},
-					"main_type": "task"
-				}
-			},
-			{
-				"measured": {
-					"width": 269,
-					"height": 95
-				},
-				"dragging": false,
-				"id": "node_1750009486785",
-				"position": {
-					"x": "197.16871806326043",
-					"y": "-58.198242187109784"
-				},
-				"type": "task",
-				"selected": false,
-				"data": {
-					"task_type": "form_inquiry",
-					"params": {
-						"form_version": "1.0.2",
-						"form_id": "task1",
-						"form_label": "Tache 1"
-					},
-					"main_type": "task"
-				}
-			},
-			{
-				"measured": {
-					"width": 220,
-					"height": 77
-				},
-				"dragging": false,
-				"id": "node_1750009491416",
-				"position": {
-					"x": "-50.26889249179476",
-					"y": "-35.708259629963166"
-				},
-				"type": "exclusive_gateway",
-				"selected": false,
-				"data": {
-					"actors": [
-						"system"
-					],
-					"main_type": "exclusive_gateway"
-				}
-			},
-			{
-				"measured": {
-					"width": 220,
-					"height": 77
-				},
-				"dragging": false,
-				"id": "node_1750009536144",
-				"position": {
-					"x": 486,
-					"y": 49
-				},
-				"type": "exclusive_gateway",
-				"selected": false,
-				"data": {
-					"actors": [
-						"system"
-					],
-					"main_type": "exclusive_gateway"
-				}
-			},
-			{
-				"measured": {
-					"width": 92,
-					"height": 57
-				},
-				"dragging": false,
-				"id": "node_1750009538871",
-				"position": {
-					"x": "994.1498718261719",
-					"y": 4
-				},
-				"type": "end",
-				"selected": false,
-				"data": {
-					"actors": [
-						"system"
-					],
-					"main_type": "end"
-				}
-			},
-			{
-				"measured": {
-					"width": 92,
-					"height": 57
-				},
-				"dragging": false,
-				"id": "node_1750009539845",
-				"position": {
-					"x": 729,
-					"y": 116
-				},
-				"type": "end",
-				"selected": false,
-				"data": {
-					"actors": [
-						"system"
-					],
-					"main_type": "end"
-				}
-			},
-			{
-				"measured": {
-					"width": 92,
-					"height": 57
-				},
-				"dragging": false,
-				"id": "node_1750009541813",
-				"position": {
-					"x": 718,
-					"y": -63
-				},
-				"type": "end",
-				"selected": false,
-				"data": {
-					"actors": [
-						"system"
-					],
-					"main_type": "end"
-				}
-			}
-		],
-		"edges": [
-			{
-				"sourceHandle": "start-header-out-process-0",
-				"source": "START",
-				"id": "xy-edge__STARTstart-header-out-process-0-node_1750009402778task-header-in-process-0",
-				"targetHandle": "task-header-in-process-0",
-				"target": "node_1750009402778"
-			},
-			{
-				"sourceHandle": "task-header-out-process-0",
-				"source": "node_1750009402778",
-				"id": "xy-edge__node_1750009402778task-header-out-process-0-node_1750009491416system-EG-header-in-process-0",
-				"targetHandle": "system-EG-header-in-process-0",
-				"target": "node_1750009491416"
-			},
-			{
-				"sourceHandle": "system-EG-body-out-process-0",
-				"source": "node_1750009491416",
-				"id": "xy-edge__node_1750009491416system-EG-body-out-process-0-node_1750009486785task-header-in-process-0",
-				"targetHandle": "task-header-in-process-0",
-				"target": "node_1750009486785"
-			},
-			{
-				"sourceHandle": "system-EG-body-out-process-1",
-				"source": "node_1750009491416",
-				"id": "xy-edge__node_1750009491416system-EG-body-out-process-1-node_1750009397886task-header-in-process-0",
-				"targetHandle": "task-header-in-process-0",
-				"target": "node_1750009397886"
-			},
-			{
-				"sourceHandle": "task-header-out-process-0",
-				"source": "node_1750009397886",
-				"id": "xy-edge__node_1750009397886task-header-out-process-0-node_1750009536144system-EG-header-in-process-0",
-				"targetHandle": "system-EG-header-in-process-0",
-				"target": "node_1750009536144"
-			},
-			{
-				"sourceHandle": "task-header-out-process-0",
-				"source": "node_1750009486785",
-				"id": "xy-edge__node_1750009486785task-header-out-process-0-node_1750009478161task-header-in-process-0",
-				"targetHandle": "task-header-in-process-0",
-				"target": "node_1750009478161"
-			},
-			{
-				"sourceHandle": "system-EG-body-out-process-0",
-				"source": "node_1750009536144",
-				"id": "xy-edge__node_1750009536144system-EG-body-out-process-0-node_1750009479987task-header-in-process-0",
-				"targetHandle": "task-header-in-process-0",
-				"target": "node_1750009479987"
-			},
-			{
-				"sourceHandle": "task-header-out-process-0",
-				"source": "node_1750009479987",
-				"id": "xy-edge__node_1750009479987task-header-out-process-0-node_1750009538871end-header-in-process-0",
-				"targetHandle": "end-header-in-process-0",
-				"target": "node_1750009538871"
-			},
-			{
-				"sourceHandle": "system-EG-body-out-process-1",
-				"source": "node_1750009536144",
-				"id": "xy-edge__node_1750009536144system-EG-body-out-process-1-node_1750009539845end-header-in-process-0",
-				"targetHandle": "end-header-in-process-0",
-				"target": "node_1750009539845"
-			},
-			{
-				"sourceHandle": "task-header-out-process-0",
-				"source": "node_1750009478161",
-				"id": "xy-edge__node_1750009478161task-header-out-process-0-node_1750009541813end-header-in-process-0",
-				"targetHandle": "end-header-in-process-0",
-				"target": "node_1750009541813"
-			}
-		],
-		"viewport": {
-			"x": 10.14094749731754,
-			"y": 148.2498720494886,
-			"zoom": 0.5743491774985175
-		},
-		"actors": {
-			"global": [
-				"group1",
-				"group2",
-				"group3"
-			],
-			"node_1750009402778": [
-				"group1"
-			],
-			"node_1750009486785": [
-				"group1",
-				"group2"
-			],
-			"node_1750009478161": [
-				"group2"
-			],
-			"node_1750009479987": [
-				"group1"
-			],
-			"node_1750009397886": [
-				"group3"
-			]
-		}
-	},
-	"from_web": true,
-	"isNewEditor": true,
-	"last_updated": 0
-}
+[
+  {
+    "id": "4vvk6UpLpEcplJ3h3oeN",
+    "actors": [],
+    "workflow_id": "RDVRadiologue",
+    "workflow_label": "RDV_Radiologue",
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-7",
+        "target": "7"
+      },
+      {
+        "animated": true,
+        "source": "7",
+        "id": "xy-edge__7-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-8",
+        "target": "8"
+      },
+      {
+        "animated": true,
+        "source": "8",
+        "id": "xy-edge__8-4",
+        "target": "4"
+      },
+      {
+        "animated": true,
+        "source": "4",
+        "id": "xy-edge__4-9",
+        "target": "9"
+      },
+      {
+        "animated": true,
+        "source": "9",
+        "id": "xy-edge__9-5",
+        "target": "5"
+      },
+      {
+        "animated": true,
+        "source": "5",
+        "id": "xy-edge__5-10",
+        "target": "10"
+      },
+      {
+        "animated": true,
+        "source": "10",
+        "id": "xy-edge__10-6",
+        "target": "6"
+      },
+      {
+        "animated": true,
+        "source": "6",
+        "id": "xy-edge__6-11",
+        "target": "11"
+      },
+      {
+        "animated": true,
+        "source": "11",
+        "id": "xy-edge__11-1",
+        "target": "1"
+      }
+    ],
+    "created_at": {
+      "_seconds": 1770223799,
+      "_nanoseconds": 428000000
+    },
+    "groups": [
+      "Patient",
+      "Infirmiere",
+      "Radiologue",
+      "Medecin"
+    ],
+    "last_updated": {
+      "_seconds": 1771558075,
+      "_nanoseconds": 770000000
+    },
+    "nodes": [
+      {
+        "measured": {
+          "width": 97,
+          "height": 63
+        },
+        "dragging": false,
+        "data": {
+          "type": "start"
+        },
+        "id": "0",
+        "position": {
+          "x": -560,
+          "y": -100
+        },
+        "type": "start",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 77,
+          "height": 63
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": 700,
+          "y": -100
+        },
+        "id": "1",
+        "type": "end"
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "form_groups": [
+            "Patient"
+          ],
+          "form_label": "Form1RDVR",
+          "form_id": "Form1RDVR",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-359.2265625",
+          "y": "-105.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form2RDVR",
+          "form_groups": [
+            "Infirmiere"
+          ],
+          "form_id": "Form2RDVR",
+          "form_actors": [],
+          "id": "3",
+          "type": "form"
+        },
+        "position": {
+          "x": "-148.2265625",
+          "y": "-111.140625"
+        },
+        "id": "3",
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form3RDVR",
+          "form_groups": [
+            "Radiologue"
+          ],
+          "form_id": "Form3RDVR",
+          "form_actors": [],
+          "id": "4",
+          "type": "form"
+        },
+        "id": "4",
+        "position": {
+          "x": "54.7734375",
+          "y": "-109.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "form_groups": [
+            "Patient"
+          ],
+          "form_label": "Form4RDVR",
+          "form_id": "Form4RDVR",
+          "form_actors": [],
+          "id": "5",
+          "type": "form"
+        },
+        "position": {
+          "x": "247.7734375",
+          "y": "-110.140625"
+        },
+        "id": "5",
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "form_groups": [
+            "Medecin"
+          ],
+          "form_label": "Form5RDVR",
+          "form_id": "Form5RDVR",
+          "form_actors": [],
+          "id": "6",
+          "type": "form"
+        },
+        "id": "6",
+        "position": {
+          "x": "447.7734375",
+          "y": "-112.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "position": {
+          "x": "-240.2265625",
+          "y": "-232.140625"
+        },
+        "id": "7",
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Observations",
+          "type": "save",
+          "collectionId": "zJNwnD95A6VqOYNOXfpK"
+        },
+        "position": {
+          "x": "-31.2265625",
+          "y": "-232.140625"
+        },
+        "id": "8",
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Observations",
+          "type": "save",
+          "collectionId": "zJNwnD95A6VqOYNOXfpK"
+        },
+        "position": {
+          "x": "176.7734375",
+          "y": "-233.140625"
+        },
+        "id": "9",
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "10",
+        "position": {
+          "x": "360.7734375",
+          "y": "-235.140625"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 67
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Observations",
+          "type": "save",
+          "collectionId": "zJNwnD95A6VqOYNOXfpK"
+        },
+        "id": "11",
+        "position": {
+          "x": "588.7734375",
+          "y": "-222.140625"
+        },
+        "type": "save",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE",
+    "workflow_id": "wf-1",
+    "children": [
+      {
+        "task_type": "form_inquiry",
+        "task_data": {
+          "form_structure": "task1",
+          "label": "Tache 1"
+        },
+        "actors": [
+          "group1"
+        ],
+        "children": [
+          {
+            "task_type": "exclusive_gateway",
+            "task_data": {
+              "key": "",
+              "values": {}
+            },
+            "users_actors": "system",
+            "children": [
+              {
+                "task_type": "form_inquiry",
+                "task_data": {
+                  "form_structure": "task1",
+                  "label": "Tache 1"
+                },
+                "actors": [
+                  "group1",
+                  "group2"
+                ],
+                "children": [
+                  {
+                    "task_type": "form_inquiry",
+                    "task_data": {
+                      "form_structure": "task1",
+                      "label": "Tache 1"
+                    },
+                    "actors": [
+                      "group2"
+                    ],
+                    "children": [
+                      {
+                        "task_type": "end"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "task_type": "form_inquiry",
+                "task_data": {
+                  "form_structure": "task1",
+                  "label": "Tache 1"
+                },
+                "actors": [
+                  "group3"
+                ],
+                "children": [
+                  {
+                    "task_type": "exclusive_gateway",
+                    "task_data": {
+                      "key": "",
+                      "values": {}
+                    },
+                    "users_actors": "system",
+                    "children": [
+                      {
+                        "task_type": "form_inquiry",
+                        "task_data": {
+                          "form_structure": "task1",
+                          "label": "Tache 1"
+                        },
+                        "actors": [
+                          "group1"
+                        ],
+                        "children": [
+                          {
+                            "task_type": "end"
+                          }
+                        ]
+                      },
+                      {
+                        "task_type": "end"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "workflow_label": "Workflow 1",
+    "web_json": {
+      "nodes": [
+        {
+          "measured": {
+            "width": 124,
+            "height": 57
+          },
+          "dragging": false,
+          "id": "START",
+          "position": {
+            "x": "-365.5036912840918",
+            "y": "-36.94622150164105"
+          },
+          "type": "start",
+          "selected": false,
+          "data": {
+            "label": "Début"
+          }
+        },
+        {
+          "measured": {
+            "width": 285,
+            "height": 95
+          },
+          "dragging": false,
+          "id": "node_1750009397886",
+          "position": {
+            "x": "192.52056309041782",
+            "y": "53.6186468146615"
+          },
+          "type": "task",
+          "selected": true,
+          "data": {
+            "task_type": "form_inquiry",
+            "params": {
+              "form_version": "1.0.2",
+              "form_id": "task1",
+              "form_label": "Tache 1"
+            },
+            "main_type": "task"
+          }
+        },
+        {
+          "measured": {
+            "width": 169,
+            "height": 95
+          },
+          "dragging": false,
+          "id": "node_1750009402778",
+          "position": {
+            "x": "-232.08198595348404",
+            "y": "-38.73427058758605"
+          },
+          "type": "task",
+          "selected": false,
+          "data": {
+            "task_type": "form_inquiry",
+            "params": {
+              "form_version": "1.0.2",
+              "form_id": "task1",
+              "form_label": "Tache 1"
+            },
+            "main_type": "task"
+          }
+        },
+        {
+          "measured": {
+            "width": 225,
+            "height": 95
+          },
+          "dragging": false,
+          "id": "node_1750009478161",
+          "position": {
+            "x": "482.01544892030324",
+            "y": "-61.95098609698269"
+          },
+          "type": "task",
+          "selected": false,
+          "data": {
+            "task_type": "form_inquiry",
+            "params": {
+              "form_version": "1.0.2",
+              "form_id": "task1",
+              "form_label": "Tache 1"
+            },
+            "main_type": "task"
+          }
+        },
+        {
+          "measured": {
+            "width": 261,
+            "height": 95
+          },
+          "dragging": false,
+          "id": "node_1750009479987",
+          "position": {
+            "x": "726.2109738999402",
+            "y": "5.332978025051119"
+          },
+          "type": "task",
+          "selected": false,
+          "data": {
+            "task_type": "form_inquiry",
+            "params": {
+              "form_version": "1.0.2",
+              "form_id": "task1",
+              "form_label": "Tache 1"
+            },
+            "main_type": "task"
+          }
+        },
+        {
+          "measured": {
+            "width": 269,
+            "height": 95
+          },
+          "dragging": false,
+          "id": "node_1750009486785",
+          "position": {
+            "x": "197.16871806326043",
+            "y": "-58.198242187109784"
+          },
+          "type": "task",
+          "selected": false,
+          "data": {
+            "task_type": "form_inquiry",
+            "params": {
+              "form_version": "1.0.2",
+              "form_id": "task1",
+              "form_label": "Tache 1"
+            },
+            "main_type": "task"
+          }
+        },
+        {
+          "measured": {
+            "width": 220,
+            "height": 77
+          },
+          "dragging": false,
+          "id": "node_1750009491416",
+          "position": {
+            "x": "-50.26889249179476",
+            "y": "-35.708259629963166"
+          },
+          "type": "exclusive_gateway",
+          "selected": false,
+          "data": {
+            "actors": [
+              "system"
+            ],
+            "main_type": "exclusive_gateway"
+          }
+        },
+        {
+          "measured": {
+            "width": 220,
+            "height": 77
+          },
+          "dragging": false,
+          "id": "node_1750009536144",
+          "position": {
+            "x": 486,
+            "y": 49
+          },
+          "type": "exclusive_gateway",
+          "selected": false,
+          "data": {
+            "actors": [
+              "system"
+            ],
+            "main_type": "exclusive_gateway"
+          }
+        },
+        {
+          "measured": {
+            "width": 92,
+            "height": 57
+          },
+          "dragging": false,
+          "id": "node_1750009538871",
+          "position": {
+            "x": "994.1498718261719",
+            "y": 4
+          },
+          "type": "end",
+          "selected": false,
+          "data": {
+            "actors": [
+              "system"
+            ],
+            "main_type": "end"
+          }
+        },
+        {
+          "measured": {
+            "width": 92,
+            "height": 57
+          },
+          "dragging": false,
+          "id": "node_1750009539845",
+          "position": {
+            "x": 729,
+            "y": 116
+          },
+          "type": "end",
+          "selected": false,
+          "data": {
+            "actors": [
+              "system"
+            ],
+            "main_type": "end"
+          }
+        },
+        {
+          "measured": {
+            "width": 92,
+            "height": 57
+          },
+          "dragging": false,
+          "id": "node_1750009541813",
+          "position": {
+            "x": 718,
+            "y": -63
+          },
+          "type": "end",
+          "selected": false,
+          "data": {
+            "actors": [
+              "system"
+            ],
+            "main_type": "end"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "sourceHandle": "start-header-out-process-0",
+          "source": "START",
+          "id": "xy-edge__STARTstart-header-out-process-0-node_1750009402778task-header-in-process-0",
+          "targetHandle": "task-header-in-process-0",
+          "target": "node_1750009402778"
+        },
+        {
+          "sourceHandle": "task-header-out-process-0",
+          "source": "node_1750009402778",
+          "id": "xy-edge__node_1750009402778task-header-out-process-0-node_1750009491416system-EG-header-in-process-0",
+          "targetHandle": "system-EG-header-in-process-0",
+          "target": "node_1750009491416"
+        },
+        {
+          "sourceHandle": "system-EG-body-out-process-0",
+          "source": "node_1750009491416",
+          "id": "xy-edge__node_1750009491416system-EG-body-out-process-0-node_1750009486785task-header-in-process-0",
+          "targetHandle": "task-header-in-process-0",
+          "target": "node_1750009486785"
+        },
+        {
+          "sourceHandle": "system-EG-body-out-process-1",
+          "source": "node_1750009491416",
+          "id": "xy-edge__node_1750009491416system-EG-body-out-process-1-node_1750009397886task-header-in-process-0",
+          "targetHandle": "task-header-in-process-0",
+          "target": "node_1750009397886"
+        },
+        {
+          "sourceHandle": "task-header-out-process-0",
+          "source": "node_1750009397886",
+          "id": "xy-edge__node_1750009397886task-header-out-process-0-node_1750009536144system-EG-header-in-process-0",
+          "targetHandle": "system-EG-header-in-process-0",
+          "target": "node_1750009536144"
+        },
+        {
+          "sourceHandle": "task-header-out-process-0",
+          "source": "node_1750009486785",
+          "id": "xy-edge__node_1750009486785task-header-out-process-0-node_1750009478161task-header-in-process-0",
+          "targetHandle": "task-header-in-process-0",
+          "target": "node_1750009478161"
+        },
+        {
+          "sourceHandle": "system-EG-body-out-process-0",
+          "source": "node_1750009536144",
+          "id": "xy-edge__node_1750009536144system-EG-body-out-process-0-node_1750009479987task-header-in-process-0",
+          "targetHandle": "task-header-in-process-0",
+          "target": "node_1750009479987"
+        },
+        {
+          "sourceHandle": "task-header-out-process-0",
+          "source": "node_1750009479987",
+          "id": "xy-edge__node_1750009479987task-header-out-process-0-node_1750009538871end-header-in-process-0",
+          "targetHandle": "end-header-in-process-0",
+          "target": "node_1750009538871"
+        },
+        {
+          "sourceHandle": "system-EG-body-out-process-1",
+          "source": "node_1750009536144",
+          "id": "xy-edge__node_1750009536144system-EG-body-out-process-1-node_1750009539845end-header-in-process-0",
+          "targetHandle": "end-header-in-process-0",
+          "target": "node_1750009539845"
+        },
+        {
+          "sourceHandle": "task-header-out-process-0",
+          "source": "node_1750009478161",
+          "id": "xy-edge__node_1750009478161task-header-out-process-0-node_1750009541813end-header-in-process-0",
+          "targetHandle": "end-header-in-process-0",
+          "target": "node_1750009541813"
+        }
+      ],
+      "viewport": {
+        "x": 10.14094749731754,
+        "y": 148.2498720494886,
+        "zoom": 0.5743491774985175
+      },
+      "actors": {
+        "global": [
+          "group1",
+          "group2",
+          "group3"
+        ],
+        "node_1750009402778": [
+          "group1"
+        ],
+        "node_1750009486785": [
+          "group1",
+          "group2"
+        ],
+        "node_1750009478161": [
+          "group2"
+        ],
+        "node_1750009479987": [
+          "group1"
+        ],
+        "node_1750009397886": [
+          "group3"
+        ]
+      }
+    },
+    "from_web": true,
+    "isNewEditor": true,
+    "last_updated": 0,
+    "actors": [
+      "group1",
+      "group2",
+      "group3",
+      "georgenaiyma@gmail.com",
+      "elmaachi.wiaime@gmail.com"
+    ]
+  },
+  {
+    "id": "Ivp0v4x6V8e6sd73VgLW",
+    "actors": [],
+    "last_updated": {
+      "_seconds": 1771432357,
+      "_nanoseconds": 503000000
+    },
+    "workflow_id": "acteur",
+    "nodes": [
+      {
+        "measured": {
+          "width": 98,
+          "height": 64
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start"
+      },
+      {
+        "measured": {
+          "width": 78,
+          "height": 64
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": 700,
+          "y": -100
+        },
+        "id": "1",
+        "type": "end"
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Fiche Personel",
+          "form_groups": [
+            "group1"
+          ],
+          "form_id": "perso_fiche",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-134.88888931274414",
+          "y": "-90.8888931274414"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "metier fiche",
+          "form_groups": [
+            "group2"
+          ],
+          "form_id": "fiche_metier",
+          "form_actors": [],
+          "id": "3",
+          "type": "form"
+        },
+        "id": "3",
+        "position": {
+          "x": "161.11111068725586",
+          "y": "-96.8888931274414"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form4RDVR",
+          "form_groups": [
+            "group3"
+          ],
+          "form_id": "Form4RDVR",
+          "form_actors": [],
+          "id": "4",
+          "type": "form"
+        },
+        "id": "4",
+        "position": {
+          "x": "404.11111068725586",
+          "y": "-86.8888931274414"
+        },
+        "type": "form",
+        "selected": false
+      }
+    ],
+    "workflow_label": "WorflowActeur",
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-4",
+        "target": "4"
+      },
+      {
+        "animated": true,
+        "source": "4",
+        "id": "xy-edge__4-1",
+        "target": "1"
+      }
+    ],
+    "created_at": {
+      "_seconds": 1771432357,
+      "_nanoseconds": 503000000
+    },
+    "groups": [
+      "group1",
+      "group2",
+      "group3"
+    ]
+  },
+  {
+    "id": "LgXjlf5TTma7MOqA2vhp",
+    "actors": [],
+    "last_updated": {
+      "_seconds": 1771532688,
+      "_nanoseconds": 810000000
+    },
+    "workflow_id": "RapportPatient",
+    "nodes": [
+      {
+        "measured": {
+          "width": 98,
+          "height": 63
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 78,
+          "height": 63
+        },
+        "dragging": false,
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": "632.0000000000003",
+          "y": -99
+        },
+        "id": "1",
+        "type": "end",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire_Patient1",
+          "form_groups": [
+            "Infirmier",
+            "Doctor"
+          ],
+          "form_id": "Form_Patient1",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-181.1797137953386",
+          "y": "-99.46127933814662"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire_Patient2",
+          "form_groups": [
+            "Doctor"
+          ],
+          "form_id": "Form_Patient2",
+          "form_actors": [],
+          "id": "3",
+          "type": "form"
+        },
+        "id": "3",
+        "position": {
+          "x": "204.76789226013312",
+          "y": "-98.61331160972207"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "4",
+        "position": {
+          "x": "19.437320456559718",
+          "y": "-98.65735285908987"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "5",
+        "position": {
+          "x": "424.4373204565594",
+          "y": "-97.65735285908985"
+        },
+        "type": "save",
+        "selected": false
+      }
+    ],
+    "workflow_label": "Rapport_Patient",
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-4",
+        "target": "4"
+      },
+      {
+        "animated": true,
+        "source": "4",
+        "id": "xy-edge__4-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-5",
+        "target": "5"
+      },
+      {
+        "animated": true,
+        "source": "5",
+        "id": "xy-edge__5-1",
+        "target": "1"
+      }
+    ],
+    "created_at": {
+      "_seconds": 1771532688,
+      "_nanoseconds": 810000000
+    },
+    "groups": [
+      "Doctor",
+      "Patient",
+      "Infirmier"
+    ]
+  },
+  {
+    "id": "Q4SXaOZS0vVYxvCI1Z1r",
+    "actors": [],
+    "workflow_id": "worktest",
+    "workflow_label": "Workflow_test",
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-4",
+        "target": "4"
+      }
+    ],
+    "created_at": {
+      "_seconds": 1769771916,
+      "_nanoseconds": 919000000
+    },
+    "groups": [
+      "Patient",
+      "Infirmier"
+    ],
+    "last_updated": {
+      "_seconds": 1771426769,
+      "_nanoseconds": 100000000
+    },
+    "nodes": [
+      {
+        "measured": {
+          "width": 97,
+          "height": 63
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start"
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 51
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "",
+          "form_groups": [
+            "Patient"
+          ],
+          "form_id": "form_test",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-141.2265625",
+          "y": "-67.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 51
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "",
+          "form_groups": [
+            "Infirmier"
+          ],
+          "form_id": "form2",
+          "form_actors": [],
+          "id": "3",
+          "type": "form"
+        },
+        "id": "3",
+        "position": {
+          "x": "177.7734375",
+          "y": "-67.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 79,
+          "height": 64
+        },
+        "dragging": false,
+        "data": {},
+        "id": "4",
+        "position": {
+          "x": "423.7734375",
+          "y": "-100.140625"
+        },
+        "type": "end",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "id": "S64m8bFnMKPzcuVnM4Cx",
+    "actors": [],
+    "workflow_id": "RDVGeneraliste",
+    "workflow_label": "RDV_Generaliste",
+    "created_at": {
+      "_seconds": 1770216259,
+      "_nanoseconds": 767000000
+    },
+    "edges": [
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-6",
+        "target": "6"
+      },
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "6",
+        "id": "xy-edge__6-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-7",
+        "target": "7"
+      },
+      {
+        "animated": true,
+        "source": "7",
+        "id": "xy-edge__7-4",
+        "target": "4"
+      },
+      {
+        "animated": true,
+        "source": "4",
+        "id": "xy-edge__4-8",
+        "target": "8"
+      },
+      {
+        "animated": true,
+        "source": "8",
+        "id": "xy-edge__8-5",
+        "selected": false,
+        "target": "5"
+      },
+      {
+        "animated": true,
+        "source": "5",
+        "id": "xy-edge__5-9",
+        "target": "9"
+      },
+      {
+        "animated": true,
+        "source": "9",
+        "id": "xy-edge__9-10",
+        "target": "10"
+      }
+    ],
+    "groups": [
+      "Patient",
+      "Medecin",
+      "Infirmiere"
+    ],
+    "last_updated": {
+      "_seconds": 1771432257,
+      "_nanoseconds": 803000000
+    },
+    "nodes": [
+      {
+        "measured": {
+          "width": 97,
+          "height": 63
+        },
+        "dragging": false,
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -544,
+          "y": -122
+        },
+        "id": "0",
+        "type": "start",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form1RDVG",
+          "form_groups": [
+            "Patient"
+          ],
+          "form_id": "Form1_RDVG",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-333.2265625",
+          "y": "-123.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form2RDVG",
+          "form_groups": [
+            "Infirmiere"
+          ],
+          "form_id": "Form2_RDVG",
+          "form_actors": [],
+          "id": "3",
+          "type": "form"
+        },
+        "id": "3",
+        "position": {
+          "x": "-82.2265625",
+          "y": "-123.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "form3RDVG",
+          "form_groups": [
+            "Medecin"
+          ],
+          "form_id": "Form3_RDVG",
+          "form_actors": [],
+          "id": "4",
+          "type": "form"
+        },
+        "id": "4",
+        "position": {
+          "x": "158.7734375",
+          "y": "-124.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form4RDVG",
+          "form_groups": [
+            "Patient"
+          ],
+          "form_id": "Form4_RDVG",
+          "form_actors": [],
+          "id": "5",
+          "type": "form"
+        },
+        "id": "5",
+        "position": {
+          "x": "435.7734375",
+          "y": "-127.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "6",
+        "position": {
+          "x": "-199.2265625",
+          "y": "-261.140625"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Observations",
+          "type": "save",
+          "collectionId": "zJNwnD95A6VqOYNOXfpK"
+        },
+        "id": "7",
+        "position": {
+          "x": "56.7734375",
+          "y": "-257.140625"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Observations",
+          "type": "save",
+          "collectionId": "zJNwnD95A6VqOYNOXfpK"
+        },
+        "id": "7",
+        "position": {
+          "x": "56.7734375",
+          "y": "-257.140625"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Observations",
+          "type": "save",
+          "collectionId": "zJNwnD95A6VqOYNOXfpK"
+        },
+        "id": "8",
+        "position": {
+          "x": "289.7734375",
+          "y": "-258.140625"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "9",
+        "position": {
+          "x": "583.7734375",
+          "y": "-267.140625"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 78,
+          "height": 64
+        },
+        "data": {},
+        "id": "10",
+        "position": {
+          "x": "763.7734375",
+          "y": "-125.140625"
+        },
+        "type": "end"
+      }
+    ]
+  },
+  {
+    "id": "Z68BwGNWGIT4TWi4Ex1X",
+    "actors": [],
+    "last_updated": {
+      "_seconds": 1771576305,
+      "_nanoseconds": 605000000
+    },
+    "workflow_id": "testworkflow",
+    "nodes": [
+      {
+        "measured": {
+          "width": 98,
+          "height": 63
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start"
+      },
+      {
+        "measured": {
+          "width": 78,
+          "height": 63
+        },
+        "dragging": false,
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": 961,
+          "y": -26
+        },
+        "id": "1",
+        "type": "end",
+        "selected": true
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire Oncologue",
+          "form_groups": [],
+          "form_id": "oncologistForm",
+          "form_actors": [],
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-168.79999923706055",
+          "y": "-99.80000305175781"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire Infirmier(ère)",
+          "form_groups": [],
+          "form_id": "nurseForm",
+          "form_actors": [],
+          "type": "form"
+        },
+        "id": "3",
+        "position": {
+          "x": "66.20000076293945",
+          "y": "-99.80000305175781"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire Chirurgien",
+          "form_groups": [],
+          "form_id": "surgeonForm",
+          "form_actors": [],
+          "type": "form"
+        },
+        "id": "4",
+        "position": {
+          "x": "276.20000076293945",
+          "y": "-99.80000305175781"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "5",
+        "position": {
+          "x": "486.20000076293945",
+          "y": "-95.80000305175781"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 207,
+          "height": 122
+        },
+        "dragging": false,
+        "data": {
+          "id": "6",
+          "type": "exclusive-gateway",
+          "branches": [
+            {
+              "condition": "",
+              "id": "Zr1najkllHTTGwS61CITt"
+            },
+            {
+              "condition": "",
+              "id": "etYizH-sF6FNeVrAtF8ts"
+            }
+          ],
+          "value": 0
+        },
+        "id": "6",
+        "position": {
+          "x": "647.2000007629395",
+          "y": "-89.80000305175781"
+        },
+        "type": "exclusive-gateway",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire Médecin généraliste",
+          "form_groups": [],
+          "form_id": "general_practitionerForm",
+          "form_actors": [],
+          "type": "form"
+        },
+        "id": "7",
+        "position": {
+          "x": "951.2000007629395",
+          "y": "-131.8000030517578"
+        },
+        "type": "form",
+        "selected": false
+      }
+    ],
+    "workflow_label": "test",
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-4",
+        "target": "4"
+      },
+      {
+        "animated": true,
+        "source": "4",
+        "id": "xy-edge__4-5",
+        "target": "5"
+      },
+      {
+        "animated": true,
+        "source": "5",
+        "id": "xy-edge__5-6",
+        "target": "6"
+      },
+      {
+        "sourceHandle": "Zr1najkllHTTGwS61CITt",
+        "animated": true,
+        "source": "6",
+        "id": "xy-edge__6Zr1najkllHTTGwS61CITt-7",
+        "target": "7"
+      },
+      {
+        "sourceHandle": "etYizH-sF6FNeVrAtF8ts",
+        "animated": true,
+        "source": "6",
+        "id": "xy-edge__6etYizH-sF6FNeVrAtF8ts-1",
+        "target": "1"
+      }
+    ],
+    "created_at": {
+      "_seconds": 1771576305,
+      "_nanoseconds": 605000000
+    },
+    "groups": []
+  },
+  {
+    "id": "ftPOqiRSQPNzWq2zgQuk",
+    "actors": [],
+    "workflow_id": "PierreWf1",
+    "workflow_label": "Pierre_wf1",
+    "created_at": {
+      "_seconds": 1771506958,
+      "_nanoseconds": 73000000
+    },
+    "groups": [
+      "Doctor",
+      "Patient",
+      "Infirmier"
+    ],
+    "last_updated": {
+      "_seconds": 1771513431,
+      "_nanoseconds": 578000000
+    },
+    "nodes": [
+      {
+        "measured": {
+          "width": 98,
+          "height": 63
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 78,
+          "height": 63
+        },
+        "dragging": false,
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": "632.0000000000003",
+          "y": -99
+        },
+        "id": "1",
+        "type": "end",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire_Patient1",
+          "form_groups": [
+            "Infirmier",
+            "Doctor"
+          ],
+          "form_id": "Form_Patient1",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-181.1797137953386",
+          "y": "-99.46127933814662"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire_Patient2",
+          "form_groups": [
+            "Doctor"
+          ],
+          "form_id": "Form_Patient2",
+          "form_actors": [],
+          "id": "3",
+          "type": "form"
+        },
+        "id": "3",
+        "position": {
+          "x": "204.76789226013312",
+          "y": "-98.61331160972207"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "4",
+        "position": {
+          "x": "19.437320456559718",
+          "y": "-98.65735285908987"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Patient",
+          "type": "save",
+          "collectionId": "zmQnw6VIf0uG44GAgQMU"
+        },
+        "id": "5",
+        "position": {
+          "x": "424.4373204565594",
+          "y": "-97.65735285908985"
+        },
+        "type": "save",
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-4",
+        "target": "4"
+      },
+      {
+        "animated": true,
+        "source": "4",
+        "id": "xy-edge__4-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-5",
+        "target": "5"
+      },
+      {
+        "animated": true,
+        "source": "5",
+        "id": "xy-edge__5-1",
+        "target": "1"
+      }
+    ]
+  },
+  {
+    "id": "h2VduKyHGdq1KNceLnnt",
+    "actors": [],
+    "workflow_id": "Workflowtest2",
+    "workflow_label": "Workflow_test2",
+    "created_at": {
+      "_seconds": 1769821180,
+      "_nanoseconds": 937000000
+    },
+    "groups": [
+      "Patient",
+      "Infirmier"
+    ],
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-6",
+        "target": "6"
+      },
+      {
+        "animated": true,
+        "source": "6",
+        "id": "xy-edge__6-5",
+        "target": "5"
+      },
+      {
+        "animated": true,
+        "source": "5",
+        "id": "xy-edge__5-4",
+        "target": "4"
+      }
+    ],
+    "nodes": [
+      {
+        "measured": {
+          "width": 97,
+          "height": 63
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start"
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 65
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "formtest",
+          "form_groups": [
+            "Patient"
+          ],
+          "form_id": "form_test",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-207.2265625",
+          "y": "-95.140625"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 77,
+          "height": 63
+        },
+        "dragging": false,
+        "data": {},
+        "id": "4",
+        "position": {
+          "x": "339.06601359979715",
+          "y": "-100.15554129213817"
+        },
+        "type": "end",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 65
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "form2",
+          "form_groups": [
+            "Infirmier"
+          ],
+          "form_id": "form2",
+          "form_actors": [],
+          "id": "5",
+          "type": "form"
+        },
+        "id": "5",
+        "position": {
+          "x": "149.7734375",
+          "y": "-102.140625"
+        },
+        "type": "form",
+        "selected": true
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 65
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "form2",
+          "form_groups": [
+            "Infirmier"
+          ],
+          "form_id": "form2",
+          "form_actors": [],
+          "id": "5",
+          "type": "form"
+        },
+        "id": "5",
+        "position": {
+          "x": "149.7734375",
+          "y": "-102.140625"
+        },
+        "type": "form",
+        "selected": true
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 65
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "Mesure",
+          "type": "save",
+          "collectionId": "0305849e-e2b0-4a27-91b0-0db35ef18999"
+        },
+        "id": "6",
+        "position": {
+          "x": "-28.2265625",
+          "y": "-192.140625"
+        },
+        "type": "save",
+        "selected": false
+      }
+    ],
+    "last_updated": {
+      "_seconds": 1770130739,
+      "_nanoseconds": 321000000
+    }
+  },
+  {
+    "id": "jjyLYdadzIyggE1hHsWY",
+    "actors": [],
+    "workflow_id": "worflowid",
+    "nodes": [
+      {
+        "measured": {
+          "width": 98,
+          "height": 64
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start"
+      },
+      {
+        "measured": {
+          "width": 78,
+          "height": 64
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": 700,
+          "y": -100
+        },
+        "id": "1",
+        "type": "end"
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "data": {
+          "form_label": "metier fiche",
+          "form_groups": [
+            "form1"
+          ],
+          "form_id": "fiche_metier",
+          "form_actors": [],
+          "id": "2",
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-110.88888931274414",
+          "y": "-114.8888931274414"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form2RDVR",
+          "form_groups": [
+            "form2"
+          ],
+          "form_id": "Form2RDVR",
+          "form_actors": [],
+          "id": "3",
+          "type": "form"
+        },
+        "id": "3",
+        "position": {
+          "x": "69.11111068725586",
+          "y": "-98.8888931274414"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 124,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Form3RDVR",
+          "form_groups": [
+            "form3"
+          ],
+          "form_id": "Form3RDVR",
+          "form_actors": [],
+          "id": "4",
+          "type": "form"
+        },
+        "id": "4",
+        "position": {
+          "x": "314.11111068725586",
+          "y": "-79.8888931274414"
+        },
+        "type": "form",
+        "selected": false
+      }
+    ],
+    "workflow_label": "worflowtets",
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-4",
+        "target": "4"
+      },
+      {
+        "animated": true,
+        "source": "4",
+        "id": "xy-edge__4-1",
+        "target": "1"
+      }
+    ],
+    "created_at": {
+      "_seconds": 1771429633,
+      "_nanoseconds": 566000000
+    },
+    "groups": [
+      "form1",
+      "form2",
+      "form3"
+    ],
+    "last_updated": {
+      "_seconds": 1771429636,
+      "_nanoseconds": 779000000
+    }
+  },
+  {
+    "id": "take_appointment_v1",
+    "workflow_id": "take_appointment_v1",
+    "name": "Prendre RDV (v1)",
+    "description": "Démo Patient -> Infirmier -> Médecin",
+    "version": 1,
+    "steps": [
+      {
+        "step_key": "PATIENT",
+        "title": "Fiche patient + RDV",
+        "appointment": {
+          "rule": "ONE_PER_PATIENT_PER_DAY",
+          "slots": [
+            "09:00",
+            "10:00",
+            "11:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00"
+          ]
+        }
+      },
+      {
+        "step_key": "NURSE",
+        "title": "Observations infirmier"
+      },
+      {
+        "step_key": "DOCTOR",
+        "title": "Prescription médecin"
+      }
+    ]
+  },
+  {
+    "id": "x8MthwMRYPHs6hxheqmU",
+    "actors": [],
+    "workflow_id": "",
+    "workflow_label": "",
+    "last_updated": {
+      "_seconds": 1771594853,
+      "_nanoseconds": 353000000
+    },
+    "nodes": [
+      {
+        "measured": {
+          "width": 98,
+          "height": 63
+        },
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        },
+        "id": "0",
+        "type": "start"
+      },
+      {
+        "measured": {
+          "width": 78,
+          "height": 63
+        },
+        "dragging": false,
+        "data": {
+          "type": "start"
+        },
+        "position": {
+          "x": 692,
+          "y": -161
+        },
+        "id": "1",
+        "type": "end",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire Oncologue",
+          "form_groups": [],
+          "form_id": "oncologistForm",
+          "form_actors": [],
+          "type": "form"
+        },
+        "id": "2",
+        "position": {
+          "x": "-156.79999923706055",
+          "y": "-99.80000305175781"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "collectionLabel": "bonjoir",
+          "type": "save",
+          "collectionId": "ZqgO7R1WBSqTBVWLnkMB"
+        },
+        "id": "3",
+        "position": {
+          "x": "46.20000076293945",
+          "y": "-124.80000305175781"
+        },
+        "type": "save",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire Chirurgien",
+          "form_groups": [
+            "chirugien"
+          ],
+          "form_id": "surgeonForm",
+          "form_actors": [],
+          "id": "5",
+          "type": "form"
+        },
+        "id": "5",
+        "position": {
+          "x": "297.20000076293945",
+          "y": "-160.4035263821661"
+        },
+        "type": "form",
+        "selected": false
+      },
+      {
+        "measured": {
+          "width": 123,
+          "height": 66
+        },
+        "dragging": false,
+        "data": {
+          "form_label": "Formulaire Chirurgien",
+          "form_groups": [],
+          "form_id": "surgeonForm",
+          "form_actors": [],
+          "type": "form"
+        },
+        "id": "5",
+        "position": {
+          "x": "297.20000076293945",
+          "y": "-160.4035263821661"
+        },
+        "type": "form",
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "animated": true,
+        "source": "0",
+        "id": "xy-edge__0-2",
+        "target": "2"
+      },
+      {
+        "animated": true,
+        "source": "2",
+        "id": "xy-edge__2-3",
+        "target": "3"
+      },
+      {
+        "animated": true,
+        "source": "3",
+        "id": "xy-edge__3-5",
+        "target": "5"
+      },
+      {
+        "animated": true,
+        "source": "5",
+        "id": "xy-edge__5-1",
+        "target": "1"
+      }
+    ],
+    "groups": [
+      "chirugien"
+    ]
+  }
+]

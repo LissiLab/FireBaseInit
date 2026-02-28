@@ -1,3 +1,110 @@
-{
-	"info": "No example yet"
-}
+[
+  {
+    "id": "0ZK8AWd3V9Y0veEhhPDi8LFlUb33",
+    "uid": "0ZK8AWd3V9Y0veEhhPDi8LFlUb33",
+    "last_updated": {
+      "_seconds": 1770736529,
+      "_nanoseconds": 262463000
+    },
+    "roles": [
+      "user"
+    ],
+    "nom": "wantiez",
+    "prenom": "pierre",
+    "email": "pierre@olga.fr"
+  },
+  {
+    "id": "EXAMPLE",
+    "info": "No example yet"
+  },
+  {
+    "id": "IVJmKR0YCSVvlURSZXxVRWmr1e82",
+    "uid": "IVJmKR0YCSVvlURSZXxVRWmr1e82",
+    "last_updated": {
+      "_seconds": 1771582726,
+      "_nanoseconds": 249641000
+    },
+    "roles": [
+      "user"
+    ],
+    "nom": "GEORGE",
+    "prenom": "Naiyma",
+    "email": "naiymultimedia@gmail.com"
+  },
+  {
+    "id": "RZJTaKy9jHSOZrW3XjniCmttKHb2",
+    "uid": "RZJTaKy9jHSOZrW3XjniCmttKHb2",
+    "last_updated": {
+      "_seconds": 1770718582,
+      "_nanoseconds": 115238000
+    },
+    "roles": [
+      "user"
+    ],
+    "nom": "okkk",
+    "prenom": "marcher",
+    "email": "gmail@gmail.com"
+  },
+  {
+    "id": "TrQt7BNJZRPI1uEYerGQWmCPZav2",
+    "uid": "TrQt7BNJZRPI1uEYerGQWmCPZav2",
+    "last_updated": {
+      "_seconds": 1770735172,
+      "_nanoseconds": 339798000
+    },
+    "roles": [
+      "user"
+    ],
+    "nom": "Campourcy",
+    "prenom": "Maxence",
+    "email": "maxence.campourcy@gmail.com"
+  },
+  {
+    "id": "c4qckogO5ZRsD4iGArnN",
+    "prenom": "ed",
+    "nom": "GASPARD",
+    "email": "exemple.ok@gmail.com"
+  },
+  {
+    "id": "cRZ1souiWGgHJWz0kucYLTUlrLh1",
+    "uid": "cRZ1souiWGgHJWz0kucYLTUlrLh1",
+    "last_updated": {
+      "_seconds": 1771420108,
+      "_nanoseconds": 844320000
+    },
+    "roles": [
+      "user"
+    ],
+    "nom": "Verhaeghem-lipson",
+    "prenom": "Mathias",
+    "email": "mat@olga.fr"
+  },
+  {
+    "id": "wO9wRms0fWSUO5OJdHXMfh4n9dC2",
+    "uid": "wO9wRms0fWSUO5OJdHXMfh4n9dC2",
+    "last_updated": {
+      "_seconds": 1771507301,
+      "_nanoseconds": 202694000
+    },
+    "roles": [
+      "user"
+    ],
+    "nom": "Yaabba",
+    "prenom": "Raja",
+    "email": "raja@olga.fr"
+  },
+  {
+    "id": "xsT6JfgWUAaD9zSEXWBlLtXgpg93",
+    "uid": "xsT6JfgWUAaD9zSEXWBlLtXgpg93",
+    "last_updated": {
+      "_seconds": 1771432995,
+      "_nanoseconds": 364936000
+    },
+    "roles": [
+      "user"
+    ],
+    "nom": "form",
+    "prenom": "form1",
+    "email": "form1@gmail.com"
+  }
+]
